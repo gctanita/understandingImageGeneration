@@ -29,6 +29,6 @@ This way, CLIP learns *semantic alignment* between images and text.
 
 ---
 
-**In short (VLM context):**  
+**In short:**  
 **CLIP = Contrastive Language–Image Pre-training**, a model that aligns images and text by mapping them into the same embedding space.  
 It’s the backbone of many VLMs because it gives them the ability to understand and connect visual data with language.

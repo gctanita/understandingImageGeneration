@@ -32,5 +32,5 @@ Unlike a simple autoencoder, a VAE doesn’t just encode one fixed latent code �
 
 ---
 
-**In short (VLM context):**  
+**In short:**  
 **VAE = Variational Autoencoder**, a model that compresses images into a latent representation and reconstructs them back. In VLMs, it’s used to efficiently bridge the gap between image pixels and language embeddings, enabling multimodal alignment and faster processing.

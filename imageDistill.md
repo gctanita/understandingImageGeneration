@@ -23,5 +23,5 @@ In the context of **VLMs**, “image distill” refers to **knowledge distillati
 
 ---
 
-**In short (VLM-specific):**  
+**In short:**  
 In VLMs, **image distill** means training a smaller vision encoder (student) to imitate a larger, more powerful model’s (teacher’s) image representations, so the VLM can keep strong multimodal abilities while being lighter and faster.
