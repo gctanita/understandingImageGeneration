@@ -25,3 +25,14 @@ So... After managing to finally set up the credentials for the bot, and adding i
 
 For more vicous roasting, there are some unhinged models out there that can go the extra mile with the roasting (like this guy that tweaks models to be amoral => https://huggingface.co/TheDrummer )
 
+If you want to have your own fun with it, you can find the N8N flow here: https://github.com/gctanita/understandingImageGeneration/blob/master/n8n/Roaster.json
+
+
+# Generating images... for science... 
+I discovered ComfyUi, and wanted to understand what the parameters do. Ok the theory is nice and all... however to know and to actually see, 2 different things. However generating pictures with various parameters takes a lot of time. So I thought to my self, ok, can I automate this? 
+
+Short answer: yes! there is a N8N integration with ComfyUi. So after obtaining credentials to google drive, I've put my plan into motion: a "Trigger manually" node to trigger the workflow, a Google Sheets - get rows in sheet node, a loop over items to feed 1 by 1 info to Discord Node and ComfyUI node. Then a Discord node that displays the picture and another one that puts some lines as a separator. 
+
+There! Job done!
+
+If you want to try it, you can find the N8N flow here: 

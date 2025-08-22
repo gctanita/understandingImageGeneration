@@ -1,0 +1,429 @@
+{
+  "name": "Comfy UI flows",
+  "nodes": [
+    {
+      "parameters": {
+        "workflow": "={\n  \"3\": {\n    \"inputs\": {\n      \"seed\": {{ $json.seed }},\n      \"steps\": {{ $json.Steps }},\n      \"cfg\": {{ $json.cfg }},\n      \"sampler_name\": \"{{ $json['sampler name'] }}\",\n      \"scheduler\": \"simple\",\n      \"denoise\": 1,\n      \"model\": [\n        \"66\",\n        0\n      ],\n      \"positive\": [\n        \"6\",\n        0\n      ],\n      \"negative\": [\n        \"7\",\n        0\n      ],\n      \"latent_image\": [\n        \"58\",\n        0\n      ]\n    },\n    \"class_type\": \"KSampler\",\n    \"_meta\": {\n      \"title\": \"KSampler\"\n    }\n  },\n  \"6\": {\n    \"inputs\": {\n      \"text\": \"{{ $json.prompt }}\",\n      \"clip\": [\n        \"38\",\n        0\n      ]\n    },\n    \"class_type\": \"CLIPTextEncode\",\n    \"_meta\": {\n      \"title\": \"CLIP Text Encode (Positive Prompt)\"\n    }\n  },\n  \"7\": {\n    \"inputs\": {\n      \"text\": \"hands and feet should not be on fire\",\n      \"clip\": [\n        \"38\",\n        0\n      ]\n    },\n    \"class_type\": \"CLIPTextEncode\",\n    \"_meta\": {\n      \"title\": \"CLIP Text Encode (Negative Prompt)\"\n    }\n  },\n  \"8\": {\n    \"inputs\": {\n      \"samples\": [\n        \"3\",\n        0\n      ],\n      \"vae\": [\n        \"39\",\n        0\n      ]\n    },\n    \"class_type\": \"VAEDecode\",\n    \"_meta\": {\n      \"title\": \"VAE Decode\"\n    }\n  },\n  \"37\": {\n    \"inputs\": {\n      \"unet_name\": \"qwen_image_fp8_e4m3fn.safetensors\",\n      \"weight_dtype\": \"default\"\n    },\n    \"class_type\": \"UNETLoader\",\n    \"_meta\": {\n      \"title\": \"Load Diffusion Model\"\n    }\n  },\n  \"38\": {\n    \"inputs\": {\n      \"clip_name\": \"qwen_2.5_vl_7b_fp8_scaled.safetensors\",\n      \"type\": \"qwen_image\",\n      \"device\": \"default\"\n    },\n    \"class_type\": \"CLIPLoader\",\n    \"_meta\": {\n      \"title\": \"Load CLIP\"\n    }\n  },\n  \"39\": {\n    \"inputs\": {\n      \"vae_name\": \"qwen_image_vae.safetensors\"\n    },\n    \"class_type\": \"VAELoader\",\n    \"_meta\": {\n      \"title\": \"Load VAE\"\n    }\n  },\n  \"58\": {\n    \"inputs\": {\n      \"width\": {{ $json.width }},\n      \"height\": {{ $json.height }},\n      \"batch_size\": 1\n    },\n    \"class_type\": \"EmptySD3LatentImage\",\n    \"_meta\": {\n      \"title\": \"EmptySD3LatentImage\"\n    }\n  },\n  \"60\": {\n    \"inputs\": {\n      \"filename_prefix\": \"ComfyUI\",\n      \"images\": [\n        \"8\",\n        0\n      ]\n    },\n    \"class_type\": \"SaveImage\",\n    \"_meta\": {\n      \"title\": \"Save Image\"\n    }\n  },\n  \"66\": {\n    \"inputs\": {\n      \"shift\": 3.1000000000000005,\n      \"model\": [\n        \"37\",\n        0\n      ]\n    },\n    \"class_type\": \"ModelSamplingAuraFlow\",\n    \"_meta\": {\n      \"title\": \"ModelSamplingAuraFlow\"\n    }\n  }\n} "
+      },
+      "type": "n8n-nodes-comfyui.comfyui",
+      "typeVersion": 1,
+      "position": [
+        400,
+        -64
+      ],
+      "id": "b86e4d08-cc31-4455-9e46-15ef5f68dc90",
+      "name": "ComfyUI",
+      "credentials": {
+        "comfyUIApi": {
+          "id": "EyxcjLyUSz76Tqg4",
+          "name": "ComfyUI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "=picture => {{ $json.filename }}",
+        "options": {},
+        "files": {
+          "values": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        624,
+        -64
+      ],
+      "id": "0f2e7eb6-4745-4c84-8b28-c154a60b8c22",
+      "name": "Discord",
+      "webhookId": "bf9082f8-ca94-4cdf-8531-2cbce51543c3",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "SN2a82OfXBFanbnJ",
+          "name": "Discord Webhook Images"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -320,
+        -80
+      ],
+      "id": "46948aa1-eb1b-498d-83d5-44cc411dc77e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1zGeAhhFfMtmhmfLqcVzp9V5CZetsOH2IJNLXlbQTUR8",
+          "mode": "list",
+          "cachedResultName": "n8n-workflow-to-generate-images",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1zGeAhhFfMtmhmfLqcVzp9V5CZetsOH2IJNLXlbQTUR8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1zGeAhhFfMtmhmfLqcVzp9V5CZetsOH2IJNLXlbQTUR8/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        -96,
+        -80
+      ],
+      "id": "3d73a6f7-41c8-4da7-afc5-8efe599af02b",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "UOgHaVRxUSOHQYl4",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        128,
+        -80
+      ],
+      "id": "f5d09cf4-60a6-427f-a679-47431dc9deb1",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "=Google Sheet Row number {{ $json.row_number }}\n\n**Scope:** {{ $json.Scope }}\n\n\n**Prompt:** {{ $json.prompt }}\n\n**Image Details:**\n- Steps: {{ $json.Steps }}\n- CFG: {{ $json.cfg }}\n- Sampler Name: {{ $json['sampler name'] }}\n- Seed: {{ $json.seed }}\n- Width: {{ $json.width }}\n- Height: {{ $json.height }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        400,
+        -240
+      ],
+      "id": "88dac94d-d041-43e9-b868-e367c54c0983",
+      "name": "Discord1",
+      "webhookId": "bf9082f8-ca94-4cdf-8531-2cbce51543c3",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "SN2a82OfXBFanbnJ",
+          "name": "Discord Webhook Images"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "=\n\n-----------------------------------------------------------------\n\n\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        832,
+        -64
+      ],
+      "id": "13ff94c8-0a79-45c7-a6de-83177628249b",
+      "name": "Discord2",
+      "webhookId": "bf9082f8-ca94-4cdf-8531-2cbce51543c3",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "SN2a82OfXBFanbnJ",
+          "name": "Discord Webhook Images"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1zGeAhhFfMtmhmfLqcVzp9V5CZetsOH2IJNLXlbQTUR8",
+          "mode": "list",
+          "cachedResultName": "n8n-workflow-to-generate-images",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1zGeAhhFfMtmhmfLqcVzp9V5CZetsOH2IJNLXlbQTUR8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 144947089,
+          "mode": "list",
+          "cachedResultName": "experiment",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1zGeAhhFfMtmhmfLqcVzp9V5CZetsOH2IJNLXlbQTUR8/edit#gid=144947089"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        -128,
+        240
+      ],
+      "id": "bb6b712f-92ad-46a3-9f3c-8a2e1d2de730",
+      "name": "Get row(s) in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "UOgHaVRxUSOHQYl4",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "batchSize": 8,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        64,
+        240
+      ],
+      "id": "11958b05-9f90-40ca-a49f-815fb3c19633",
+      "name": "Loop Over Items1"
+    },
+    {
+      "parameters": {
+        "jsCode": "let result = [];\nfor (let i=0; i<$input.all().length; i++) {\n  let element = { \n    picture: \"ComfyUI_\" + $input.all().at(i).json['picture name'].toString().padStart(5,0) + \"_.png\",\n    sampler: $input.first().json['sampler name'].toUpperCase(),\n    seed: $input.first().json.seed,\n    pictureType: $input.first().json['picture type']\n  };\n  result[i] = element;\n}\n\nreturn {\n  result\n  };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        304,
+        256
+      ],
+      "id": "63afa24c-4ff5-418d-937a-aa4a909e75c5",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "html": "<!DOCTYPE html>\n\n<html>\n<head>\n  <meta charset=\"UTF-8\" />\n  <title>My HTML document</title>\n</head>\n<body>\n  <div class=\"container\">\n    <table>\n      <tr>\n        <td><h1>Sampler: {{ $json.result[0].sampler }} <br>Seed: {{ $json.result[0].seed }}</h1></td>\n        <td><h1>Sampler: {{ $json.result[1].sampler }} <br>Seed: {{ $json.result[1].seed }}</h1></td>\n         <td><h1>Sampler: {{ $json.result[2].sampler }} <br>Seed: {{ $json.result[2].seed }}</h1></td>\n         <td><h1>Sampler: {{ $json.result[3].sampler }} <br>Seed: {{ $json.result[3].seed }}</h1></td>\n      </tr>\n      <tr>\n        <td>\n          <img src = \"C:\\comfyUi\\output\\{{ $json.result[0].picture }}\" width=\"400px\">\n        </td>\n        <td>\n          <img src = \"C:\\comfyUi\\output\\{{ $json.result[1].picture }}\" width=\"400px\">\n        </td>\n           <td>\n          <img src = \"C:\\comfyUi\\output\\{{ $json.result[2].picture }}\" width=\"400px\">\n        </td>\n           <td>\n          <img src = \"C:\\comfyUi\\output\\{{ $json.result[3].picture }}\" width=\"400px\">\n        </td>\n      </tr>\n      <tr>\n        <td>\n          <img src = \"C:\\comfyUi\\output\\{{ $json.result[4].picture }}\" width=\"400px\">\n        </td>\n        <td>\n          <img src = \"C:\\comfyUi\\output\\{{ $json.result[5].picture }}\" width=\"400px\">\n        </td>\n           <td>\n          <img src = \"C:\\comfyUi\\output\\{{ $json.result[6].picture }}\" width=\"400px\">\n        </td>\n           <td>\n          <img src = \"C:\\comfyUi\\output\\{{ $json.result[7].picture }}\"  width=\"400px\">\n        </td>\n      </tr>\n      <tr>\n         <td><h1>Sampler: {{ $json.result[4].sampler }} <br>Seed: {{ $json.result[4].seed }}</h1></td>\n         <td><h1>Sampler: {{ $json.result[5].sampler }} <br>Seed: {{ $json.result[5].seed }}</h1></td>\n         <td><h1>Sampler: {{ $json.result[6].sampler }} <br>Seed: {{ $json.result[6].seed }}</h1></td>\n         <td><h1>Sampler: {{ $json.result[7].sampler }} <br>Seed: {{ $json.result[7].seed }}</h1></td>\n      </tr>\n    </table>\n  </div>\n</body>\n</html>\n\n<style>\n.container {\n  background-color: #ffffff;\n  text-align: center;\n  padding: 16px;\n  border-radius: 8px;\n}\n\nh1 {\n  color: #000000;\n  font-size: 24px;\n  font-weight: bold;\n  padding: 1px;\n  margin: 1px;\n}\n\nh2 {\n  color: #909399;\n  font-size: 18px;\n  font-weight: bold;\n  padding: 8px;\n}\n</style>\n\n<script>\nconsole.log(\"Hello World!\");\n</script>"
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        560,
+        256
+      ],
+      "id": "c4387034-ee5a-4227-9635-653dd5ac5593",
+      "name": "HTML"
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "html",
+        "options": {
+          "fileName": "={{ $('Code').item.json.result[0].sampler }}_{{ $('Code').item.json.result[0].pictureType }}.html"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        768,
+        256
+      ],
+      "id": "cecc2403-fede-420b-945f-d8077881c3a6",
+      "name": "Convert to File1"
+    },
+    {
+      "parameters": {
+        "name": "={{ $('Code').item.json.result[0].sampler }}_{{ $('Code').item.json.result[0].pictureType }}.html",
+        "driveId": {
+          "__rl": true,
+          "value": "My Drive",
+          "mode": "list",
+          "cachedResultName": "My Drive",
+          "cachedResultUrl": "https://drive.google.com/drive/my-drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "11CHbVMaBWi7QHggsrUuz-oiTDR--Dh3-",
+          "mode": "list",
+          "cachedResultName": "n8n auto",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/11CHbVMaBWi7QHggsrUuz-oiTDR--Dh3-"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        944,
+        256
+      ],
+      "id": "e6c42fda-e98a-425d-88a8-c4bf83e57f28",
+      "name": "Upload file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Un1qb0poh6VzeefI",
+          "name": "Google Drive account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "ComfyUI": {
+      "main": [
+        [
+          {
+            "node": "Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "ComfyUI",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Discord1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Discord": {
+      "main": [
+        [
+          {
+            "node": "Discord2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Discord2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items1": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML": {
+      "main": [
+        [
+          {
+            "node": "Convert to File1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File1": {
+      "main": [
+        [
+          {
+            "node": "Upload file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload file": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "dad43e93-655d-4754-8970-c4e84e963585",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "558d88703fb65b2d0e44613bc35916258b0f0bf983c5d4730c00c424b77ca36a"
+  },
+  "id": "7g0yjmgvAoRRff2j",
+  "tags": []
+}
