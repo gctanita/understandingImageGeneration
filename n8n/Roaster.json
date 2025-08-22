@@ -1,0 +1,344 @@
+{
+  "name": "Roaster",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -640,
+        -256
+      ],
+      "id": "1158b13f-21cd-4363-a0f1-3326f2ed505d",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "operation": "get",
+        "guildId": {
+          "__rl": true,
+          "value": "https://discord.com/channels/1404025893466144768",
+          "mode": "url",
+          "__regex": "https:\\/\\/discord.com\\/channels\\/([0-9]+)"
+        },
+        "channelId": {
+          "__rl": true,
+          "value": "https://discord.com/channels/1404025893466144768/1406611739696431177",
+          "mode": "url",
+          "__regex": "https:\\/\\/discord.com\\/channels\\/[0-9]+\\/([0-9]+)"
+        }
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        -400,
+        -256
+      ],
+      "id": "ea9a240c-e9be-4fab-978b-ca6dd25a4b4b",
+      "name": "Get a channel",
+      "webhookId": "6106aa01-0c58-4066-89bf-3a9504733a76",
+      "credentials": {
+        "discordOAuth2Api": {
+          "id": "vXeEQfyP4c39vxl4",
+          "name": "Discord account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "guildId": {
+          "__rl": true,
+          "value": "1404025893466144768",
+          "mode": "list",
+          "cachedResultName": "AiStoryTelling",
+          "cachedResultUrl": "https://discord.com/channels/1404025893466144768"
+        },
+        "channelId": {
+          "__rl": true,
+          "value": "1406611739696431177",
+          "mode": "list",
+          "cachedResultName": "roaster",
+          "cachedResultUrl": "https://discord.com/channels/1404025893466144768/1406611739696431177"
+        },
+        "content": "={{ $json.text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        704,
+        -240
+      ],
+      "id": "99181712-0cdc-4ab8-a505-fff898dbbcb2",
+      "name": "Send a message",
+      "webhookId": "1371dfa4-d633-464d-8413-ffa9c85c720f",
+      "credentials": {
+        "discordBotApi": {
+          "id": "4oiLdWd09ybU7vhM",
+          "name": "Discord Bot account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0/30 * * * * *"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -656,
+        -432
+      ],
+      "id": "dd8a45a4-f309-4c07-b4ac-b19a5163829d",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "model": "qwen2.5:7b-instruct-q4_K_M",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        320,
+        -80
+      ],
+      "id": "ff26f566-5913-48d7-b506-3918a944573d",
+      "name": "Ollama Chat Model1",
+      "credentials": {
+        "ollamaApi": {
+          "id": "Bc0BiOpHV8bG6lRn",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "710deaac-62ed-4046-9497-f890a35fdf7b",
+              "leftValue": "={{ $json.author.username }}",
+              "rightValue": "Roaster",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "abbe7c0f-0484-4a15-b26b-0c8ee92ef740",
+              "leftValue": "={{ $json.author.bot }}",
+              "rightValue": "true",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        32,
+        -256
+      ],
+      "id": "7d377005-30be-426a-9bd1-9949c0003b73",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "jsCode": "const input = $input.first().json.output;\nconst tagRe = /<\\s*\\/?\\s*think\\b[^>]*>/gi; \n\nlet depth = 0;\nlet last = 0;\nlet out = \"\";\n\n  for (const m of input.matchAll(tagRe)) {\n    const i = m.index;\n    if (i == null) continue;\n\n    // append plain text only when we're not inside a <think> block\n    if (depth === 0) out += input.slice(last, i);\n\n    const tag = m[0];\n    const isClosing = /^<\\s*\\/\\s*think/i.test(tag);\n    const isSelfClosing = /^<\\s*think\\b[^>]*\\/\\s*>/i.test(tag);\n\n    if (isClosing) {\n      depth = Math.max(0, depth - 1);\n    } else if (!isSelfClosing) {\n      depth += 1; // entering a <think> block\n    }\n    last = i + tag.length; // skip the tag itself\n  }\n\n  // add any trailing text if we're not still inside a <think> block\n  if (depth === 0 && last < input.length) {\n    out += input.slice(last);\n  }\n\n\nreturn { \"output\": out.toString() };\n\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        304
+      ],
+      "id": "1e173817-2b07-402d-9502-93f279b9c26c",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "get",
+        "guildId": {
+          "__rl": true,
+          "value": "1404025893466144768",
+          "mode": "list",
+          "cachedResultName": "AiStoryTelling",
+          "cachedResultUrl": "https://discord.com/channels/1404025893466144768"
+        },
+        "channelId": {
+          "__rl": true,
+          "value": "1406611739696431177",
+          "mode": "list",
+          "cachedResultName": "roaster",
+          "cachedResultUrl": "https://discord.com/channels/1404025893466144768/1406611739696431177"
+        },
+        "messageId": "={{ $json.last_message_id }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        -176,
+        -256
+      ],
+      "id": "a8239c01-85f2-4ee1-a8db-98b847d02bb8",
+      "name": "Get a message",
+      "webhookId": "7d4741d9-2c45-444f-ba40-29f5a10c83cd",
+      "credentials": {
+        "discordBotApi": {
+          "id": "4oiLdWd09ybU7vhM",
+          "name": "Discord Bot account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are Roaster, a stand-up comic bot for Discord. Your job is to deliver a single, vicious roast about the author’s last message. You must be witty, punchy, and brutal. YOU WILL REPLY IN THE LANGUAGE OF THE CONTENT. You are the most sarcastic creature ever invented, and you will give your mind boggling witty roasting reply to user called \"{{ $json.author.global_name }}\" that made the fatal mistake of saying \"{{ $json.content }}\". YOUR REPLY SHOULD BE ONLY 1 PARAGRAPH of MAX 50 words. do not start the reply with \"oh\" or \"ah\".",
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        320,
+        -240
+      ],
+      "id": "914d561a-e32a-471e-aefd-4c976e0cb5c4",
+      "name": "Basic LLM Chain"
+    }
+  ],
+  "pinData": {
+    "When clicking ‘Execute workflow’": [
+      {
+        "json": {
+          "initial_message": "1406650622140485600"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get a channel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a channel": {
+      "main": [
+        [
+          {
+            "node": "Get a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message": {
+      "main": [
+        []
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get a channel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        []
+      ]
+    },
+    "Get a message": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f86920cb-f290-4420-842f-3d7b4a503084",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "558d88703fb65b2d0e44613bc35916258b0f0bf983c5d4730c00c424b77ca36a"
+  },
+  "id": "rO8CM3NmesxRvReZ",
+  "tags": []
+}
