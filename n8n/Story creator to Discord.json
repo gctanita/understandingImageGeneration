@@ -72,7 +72,7 @@
       "type": "@n8n/n8n-nodes-langchain.lmOllama",
       "typeVersion": 1,
       "position": [
-        1424,
+        1344,
         16
       ],
       "id": "cc8ab388-b830-4ceb-8915-46c46a08484c",
@@ -115,7 +115,7 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.7,
       "position": [
-        1424,
+        1344,
         -160
       ],
       "id": "e4e785d1-0499-4eb8-8701-696ed097fea2",
@@ -156,7 +156,7 @@
       "type": "n8n-nodes-base.discord",
       "typeVersion": 2,
       "position": [
-        880,
+        896,
         -368
       ],
       "id": "3300fd20-c964-4054-bae5-ce7ea8a11b89",
@@ -172,14 +172,14 @@
     {
       "parameters": {
         "authentication": "webhook",
-        "content": "=.\n\n**CHAPTER {{ $json[\"output.chapters\"].chapter_number }} - {{ $json['output.chapters'].chapter_title }}**\n------------------------------------------------------------------\n",
+        "content": "=.\n\n**CHAPTER {{ $('Split Out').item.json['output.chapters'].chapter_number }} - {{ $('Split Out').item.json['output.chapters'].chapter_title }}**\n------------------------------------------------------------------\n",
         "options": {}
       },
       "type": "n8n-nodes-base.discord",
       "typeVersion": 2,
       "position": [
-        1232,
-        -64
+        1808,
+        -368
       ],
       "id": "18c2ed96-b1e0-4439-8804-fa8a3b83fe5e",
       "name": "Discord - Send Chapter name",
@@ -294,6 +294,11 @@
             "node": "Generate Chapter Parts - max 2k chars",
             "type": "main",
             "index": 0
+          },
+          {
+            "node": "Discord - Send Chapter name",
+            "type": "main",
+            "index": 0
           }
         ]
       ]
@@ -317,11 +322,6 @@
             "node": "Generate Chapter By Chapter",
             "type": "main",
             "index": 0
-          },
-          {
-            "node": "Discord - Send Chapter name",
-            "type": "main",
-            "index": 0
           }
         ]
       ]
@@ -342,7 +342,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "9ab90d89-39bb-453e-87b0-af01d45e86f0",
+  "versionId": "ece476cf-20eb-4082-af8e-c1824502021e",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "558d88703fb65b2d0e44613bc35916258b0f0bf983c5d4730c00c424b77ca36a"
