@@ -35,4 +35,16 @@ Short answer: yes! there is a N8N integration with ComfyUi. So after obtaining c
 
 There! Job done!
 
-If you want to try it, you can find the N8N flow here: 
+If you want to try it, you can find the N8N flow here: https://github.com/gctanita/understandingImageGeneration/blob/master/n8n/Comfy%20UI%20flows.json
+
+
+# Making life easier...
+So I have been posting images and comparing them to see how different values affect picture generation. Cool... However... It takes a lot of time to take them by hand put them into a Google Slides, resize, arrange, note down stuff. 
+
+Just as I was about to go into a wondwerful 36 hour job to generate pictures, I thought to myself: is there any way to do that step easier? Of course the answer is yes, otherwise I wouldn't be writing this, right?! :D So, I solved this by creating a spreadsheet, that contains the info of the pictures (like the names, the seed, the name) and a N8N workflow around it.
+
+A "manual trigger" node, that triggers the Google Sheets-get rows in sheet node, a loop over items node, a code node that converts the names of the pictures to the correct name format, and some other info from the sheet, that gets passed down to a HTML template node, that feeds a convert to file node that finally gets uploaded to google drive using an upload file node. 
+
+Simple and elegant... And now I can dedicate my time and energy at looking at the pictures and analyzing them, instead of wasting time arrainging the pictures manually.
+
+If you want to try it, you can find the N8N flow here: https://github.com/gctanita/understandingImageGeneration/blob/master/n8n/Comfy%20UI%20flows.json
