@@ -1,28 +1,32 @@
-# DDIM
+# DPM_2_ANCESTRAL
 
-Average score: 14.03 out of 17.25
-Total score: 449 out of 552
-Average time: 134.405 s / picture
-Average time normalized: 125.88 s / picture *
+Average score: 13.56 out of 17.25
+Total score: 434 out of 552
+Average time: 246.11 s / picture
+Average time normalized: 242.68 s / picture *
 
-DDIM stands for Denoising Diffusion Implicit Models. It is a type of sampler used in image generation models (like Stable Diffusion) to speed up the denoising process while preserving image quality.
 
-DDIM is an acceleration technique introduced in 2021 by Jiaming Song et al. to generate images faster and with more control.
-- It reduces the number of denoising steps needed (e.g., from 1000 to 20–50).
-- Unlike standard samplers (like DDPM), which are stochastic (random), DDIM can work in a deterministic mode, meaning:
-  - Given the same seed, prompt, and settings, it always gives the same image.
-- It's a non-Markovian sampler, meaning each step depends on all previous steps, not just the immediate last one.
+DPM_2_ANCESTRAL is a stochastic variant of the DPM_2 sampler, combining the accuracy of second-order solvers with the randomness of ancestral sampling to introduce creative variation in generated images.
+
+
+How it Works
+- In regular DPM_2, the reverse diffusion process is fully deterministic — great for repeatable outputs.
+- DPM_2_ANCESTRAL injects Gaussian noise at each step in a carefully controlled way, which:
+  - Increases diversity
+  - Helps the model explore more of the latent space
+  - Can recover more fine-grained details or enhance creativity
 
 
 ✅ Pros
-- Fast image generation
-- Deterministic (good for reproducibility)
-- Less noisy than stochastic samplers
-- Works without retraining the diffusion model
+- High-quality results like dpm_2
+- More artistic variation thanks to stochasticity
+- Great for natural scenes, portraits, and dynamic compositions
+- Avoids the overly flat results that some deterministic samplers produce
 
 ⚠️ Cons
-- Sometimes less diverse than stochastic samplers
-- May generate less fine detail than longer-step samplers like DPM++ with higher steps
+- Less predictable (not ideal for reproducibility testing)
+- May introduce minor artifacts in rare cases due to noise injection
+- Slower than pure Euler/Heun methods (because it’s second-order)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:
@@ -36,7 +40,7 @@ DDIM is an acceleration technique introduced in 2021 by Jiaming Song et al. to g
 
 
 You can find the raw data here: 
-- https://github.com/gctanita/understandingImageGeneration/blob/master/Samplers/DDIM/ddim-raw-data.md
+- https://github.com/gctanita/understandingImageGeneration/blob/master/Samplers/DPM_2/dpm_2-raw-data.md
 
 
 Scoring criteria for each series can be found here:
@@ -50,6 +54,3 @@ Hardware the setup:
 
 
 For each image I gave it a score based on some on a set of subjective criteria designed to assess visual quality and consistency across different samplers. Each anomaly observed in the generated images deducted points from the total score, resulting in a binary scale (1 = acceptable, 0 = flawed). And for each image I recorded how much it took to generate them. Average normalized time means that I have eliminated the biggest 4 times from the series, that contained the loading of the model and / or parsing of the prompt for the first time. 
-
-
-
