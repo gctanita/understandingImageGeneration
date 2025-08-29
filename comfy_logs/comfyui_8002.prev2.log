@@ -1,0 +1,84 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-08-16 21:29:01.171] ** ComfyUI startup time: 2025-08-16 21:29:01.171
+[2025-08-16 21:29:01.171] ** Platform: Windows
+[2025-08-16 21:29:01.171] ** Python version: 3.12.9 (main, Feb 12 2025, 14:52:31) [MSC v.1942 64 bit (AMD64)]
+[2025-08-16 21:29:01.171] ** Python executable: C:\comfyUi\.venv\Scripts\python.exe
+[2025-08-16 21:29:01.171] ** ComfyUI Path: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI
+[2025-08-16 21:29:01.171] ** ComfyUI Base Folder Path: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI
+[2025-08-16 21:29:01.172] ** User directory: C:\comfyUi\user
+[2025-08-16 21:29:01.172] ** ComfyUI-Manager config path: C:\comfyUi\user\default\ComfyUI-Manager\config.ini
+[2025-08-16 21:29:01.172] ** Log path: C:\comfyUi\user\comfyui.log
+[ComfyUI-Manager] Failed to restore comfyui-frontend-package
+[2025-08-16 21:29:02.257] expected str, bytes or os.PathLike object, not NoneType
+[2025-08-16 21:29:02.258] 
+Prestartup times for custom nodes:
+[2025-08-16 21:29:02.258]    2.9 seconds: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI\custom_nodes\ComfyUI-Manager
+[2025-08-16 21:29:02.258] 
+[2025-08-16 21:29:04.076] Checkpoint files will always be loaded safely.
+[2025-08-16 21:29:04.180] Total VRAM 8192 MB, total RAM 32561 MB
+[2025-08-16 21:29:04.180] pytorch version: 2.7.0+cu128
+[2025-08-16 21:29:04.181] Set vram state to: NORMAL_VRAM
+[2025-08-16 21:29:04.181] Device: cuda:0 NVIDIA GeForce GTX 1080 : cudaMallocAsync
+[2025-08-16 21:29:05.875] Using pytorch attention
+[2025-08-16 21:29:07.354] Python version: 3.12.9 (main, Feb 12 2025, 14:52:31) [MSC v.1942 64 bit (AMD64)]
+[2025-08-16 21:29:07.354] ComfyUI version: 0.3.50
+[2025-08-16 21:29:07.375] [Prompt Server] web root: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI\web_custom_versions\desktop_app
+[2025-08-16 21:29:08.452] ComfyUI-GGUF: Partial torch compile only, consider updating pytorch
+[2025-08-16 21:29:08.466] ### Loading: ComfyUI-Manager (V3.30.4)
+[2025-08-16 21:29:08.468] [ComfyUI-Manager] network_mode: public
+[2025-08-16 21:29:08.469] ### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+[2025-08-16 21:29:08.476] 
+Import times for custom nodes:
+[2025-08-16 21:29:08.476]    0.0 seconds: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI\custom_nodes\websocket_image_save.py
+[2025-08-16 21:29:08.476]    0.0 seconds: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI\custom_nodes\ComfyUI-Manager
+[2025-08-16 21:29:08.476]    0.0 seconds: C:\comfyUi\custom_nodes\ComfyUI-GGUF
+[2025-08-16 21:29:08.476] 
+[2025-08-16 21:29:08.627] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2025-08-16 21:29:08.638] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2025-08-16 21:29:08.639] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2025-08-16 21:29:08.902] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2025-08-16 21:29:08.965] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2025-08-16 21:29:09.069] Failed to initialize database. Please ensure you have installed the latest requirements. If the error persists, please report this as in future the database will be required: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-08-16 21:29:09.083] Starting server
+
+[2025-08-16 21:29:09.083] To see the GUI go to: http://127.0.0.1:8002
+[2025-08-16 21:29:10.325] comfyui-frontend-package not found in requirements.txt
+[2025-08-16 21:29:12.402] FETCH ComfyRegistry Data: 5/94
+[2025-08-16 21:29:16.423] FETCH ComfyRegistry Data: 10/94
+[2025-08-16 21:29:20.958] FETCH ComfyRegistry Data: 15/94
+[2025-08-16 21:29:24.735] FETCH ComfyRegistry Data: 20/94
+[2025-08-16 21:29:29.394] FETCH ComfyRegistry Data: 25/94
+[2025-08-16 21:29:33.334] FETCH ComfyRegistry Data: 30/94
+[2025-08-16 21:29:37.668] FETCH ComfyRegistry Data: 35/94
+[2025-08-16 21:29:43.005] FETCH ComfyRegistry Data: 40/94
+[2025-08-16 21:29:46.857] FETCH ComfyRegistry Data: 45/94
+[2025-08-16 21:29:50.911] FETCH ComfyRegistry Data: 50/94
+[2025-08-16 21:29:54.866] FETCH ComfyRegistry Data: 55/94
+[2025-08-16 21:29:58.830] FETCH ComfyRegistry Data: 60/94
+[2025-08-16 21:30:03.395] FETCH ComfyRegistry Data: 65/94
+[2025-08-16 21:30:07.254] FETCH ComfyRegistry Data: 70/94
+[2025-08-16 21:30:11.257] FETCH ComfyRegistry Data: 75/94
+[2025-08-16 21:30:15.564] FETCH ComfyRegistry Data: 80/94
+[2025-08-16 21:30:19.954] FETCH ComfyRegistry Data: 85/94
+[2025-08-16 21:30:23.703] FETCH ComfyRegistry Data: 90/94
+[2025-08-16 21:30:27.534] FETCH ComfyRegistry Data [DONE]
+[2025-08-16 21:30:27.670] [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+[2025-08-16 21:30:27.733] nightly_channel: 
+[2025-08-16 21:30:27.733] https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/remote
+[2025-08-16 21:30:27.733] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[2025-08-16 21:30:28.041] [ComfyUI-Manager] All startup tasks have been completed.
+[2025-08-16 21:30:50.238] got prompt
+[2025-08-16 21:30:50.255] Using pytorch attention in VAE
+[2025-08-16 21:30:50.256] Using pytorch attention in VAE
+[2025-08-16 21:30:50.403] VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[2025-08-16 21:30:51.456] Using scaled fp8: fp8 matrix mult: False, scale input: False
+[2025-08-16 21:30:52.466] CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[2025-08-16 21:31:01.848] Requested to load QwenImageTEModel_
+[2025-08-16 21:31:03.309] loaded partially 5755.8 5755.799617767334 0
+[2025-08-16 21:31:14.578] 0 models unloaded.
+[2025-08-16 21:31:14.584] loaded partially 5755.799617862702 5755.799617767334 0
+[2025-08-16 21:31:33.584] model weight dtype torch.float8_e4m3fn, manual cast: torch.float32
+[2025-08-16 21:31:33.584] model_type FLUX
+[2025-08-16 21:32:16.574] Requested to load QwenImage
+[2025-08-16 21:32:22.431] loaded partially 5725.674919891358 5719.523986816406 0

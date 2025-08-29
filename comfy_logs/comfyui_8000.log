@@ -1,0 +1,1012 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-08-24 00:31:58.615] ** ComfyUI startup time: 2025-08-24 00:31:58.615
+[2025-08-24 00:31:58.615] ** Platform: Windows
+[2025-08-24 00:31:58.615] ** Python version: 3.12.9 (main, Feb 12 2025, 14:52:31) [MSC v.1942 64 bit (AMD64)]
+[2025-08-24 00:31:58.615] ** Python executable: C:\comfyUi\.venv\Scripts\python.exe
+[2025-08-24 00:31:58.615] ** ComfyUI Path: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI
+[2025-08-24 00:31:58.615] ** ComfyUI Base Folder Path: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI
+[2025-08-24 00:31:58.615] ** User directory: C:\comfyUi\user
+[2025-08-24 00:31:58.616] ** ComfyUI-Manager config path: C:\comfyUi\user\default\ComfyUI-Manager\config.ini
+[2025-08-24 00:31:58.616] ** Log path: C:\comfyUi\user\comfyui.log
+[ComfyUI-Manager] Failed to restore comfyui-frontend-package
+[2025-08-24 00:32:03.875] expected str, bytes or os.PathLike object, not NoneType
+[2025-08-24 00:32:03.876] 
+Prestartup times for custom nodes:
+[2025-08-24 00:32:03.876]    9.1 seconds: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI\custom_nodes\ComfyUI-Manager
+[2025-08-24 00:32:03.876] 
+[2025-08-24 00:32:14.069] Checkpoint files will always be loaded safely.
+[2025-08-24 00:32:14.272] Total VRAM 8187 MB, total RAM 32561 MB
+[2025-08-24 00:32:14.272] pytorch version: 2.7.0+cu128
+[2025-08-24 00:32:14.273] Set vram state to: NORMAL_VRAM
+[2025-08-24 00:32:14.274] Device: cuda:0 NVIDIA GeForce RTX 4060 Ti : cudaMallocAsync
+[2025-08-24 00:32:20.749] Using pytorch attention
+[2025-08-24 00:32:45.705] Python version: 3.12.9 (main, Feb 12 2025, 14:52:31) [MSC v.1942 64 bit (AMD64)]
+[2025-08-24 00:32:45.705] ComfyUI version: 0.3.51
+[2025-08-24 00:32:45.730] [Prompt Server] web root: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI\web_custom_versions\desktop_app
+[2025-08-24 00:32:47.556] ComfyUI-GGUF: Partial torch compile only, consider updating pytorch
+[2025-08-24 00:32:47.584] ### Loading: ComfyUI-Manager (V3.30.4)
+[2025-08-24 00:32:47.584] [ComfyUI-Manager] network_mode: public
+[2025-08-24 00:32:47.585] ### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+[2025-08-24 00:32:47.604] 
+Import times for custom nodes:
+[2025-08-24 00:32:47.604]    0.0 seconds: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI\custom_nodes\websocket_image_save.py
+[2025-08-24 00:32:47.604]    0.0 seconds: C:\Users\GCTAN\AppData\Local\Programs\@comfyorgcomfyui-electron\resources\ComfyUI\custom_nodes\ComfyUI-Manager
+[2025-08-24 00:32:47.604]    0.0 seconds: C:\comfyUi\custom_nodes\ComfyUI-GGUF
+[2025-08-24 00:32:47.604] 
+[2025-08-24 00:32:47.720] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2025-08-24 00:32:47.730] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2025-08-24 00:32:47.802] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2025-08-24 00:32:47.854] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2025-08-24 00:32:47.931] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2025-08-24 00:32:48.669] Failed to initialize database. Please ensure you have installed the latest requirements. If the error persists, please report this as in future the database will be required: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2025-08-24 00:32:48.684] Starting server
+
+[2025-08-24 00:32:48.685] To see the GUI go to: http://127.0.0.1:8000
+[2025-08-24 00:32:51.875] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 00:32:51.956] FETCH ComfyRegistry Data: 5/95
+[2025-08-24 00:32:52.618] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 00:32:55.845] FETCH ComfyRegistry Data: 10/95
+[2025-08-24 00:32:59.805] FETCH ComfyRegistry Data: 15/95
+[2025-08-24 00:33:03.869] FETCH ComfyRegistry Data: 20/95
+[2025-08-24 00:33:07.960] FETCH ComfyRegistry Data: 25/95
+[2025-08-24 00:33:12.233] FETCH ComfyRegistry Data: 30/95
+[2025-08-24 00:33:16.142] FETCH ComfyRegistry Data: 35/95
+[2025-08-24 00:33:18.194] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 00:33:18.206] got prompt
+[2025-08-24 00:33:18.266] Using pytorch attention in VAE
+[2025-08-24 00:33:18.269] Using pytorch attention in VAE
+[2025-08-24 00:33:18.637] VAE load device: cuda:0, offload device: cpu, dtype: torch.bfloat16
+[2025-08-24 00:33:18.801] Using scaled fp8: fp8 matrix mult: False, scale input: False
+[2025-08-24 00:33:19.056] CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[2025-08-24 00:33:20.224] FETCH ComfyRegistry Data: 40/95
+[2025-08-24 00:33:25.146] FETCH ComfyRegistry Data: 45/95
+[2025-08-24 00:33:28.335] Requested to load QwenImageTEModel_
+[2025-08-24 00:33:29.811] FETCH ComfyRegistry Data: 50/95
+[2025-08-24 00:33:29.901] loaded partially 5645.8 5645.7996826171875 0
+[2025-08-24 00:33:31.018] 0 models unloaded.
+[2025-08-24 00:33:31.035] loaded partially 5645.799682712555 5645.7996826171875 0
+[2025-08-24 00:33:34.275] FETCH ComfyRegistry Data: 55/95
+[2025-08-24 00:33:34.567] model weight dtype torch.float8_e4m3fn, manual cast: torch.bfloat16
+[2025-08-24 00:33:34.569] model_type FLUX
+[2025-08-24 00:33:38.385] FETCH ComfyRegistry Data: 60/95
+[2025-08-24 00:33:42.342] FETCH ComfyRegistry Data: 65/95
+[2025-08-24 00:33:46.472] FETCH ComfyRegistry Data: 70/95
+[2025-08-24 00:33:55.838] FETCH ComfyRegistry Data: 75/95
+[2025-08-24 00:33:59.899] FETCH ComfyRegistry Data: 80/95
+[2025-08-24 00:34:03.852] FETCH ComfyRegistry Data: 85/95
+[2025-08-24 00:34:07.805] FETCH ComfyRegistry Data: 90/95
+[2025-08-24 00:34:12.515] FETCH ComfyRegistry Data: 95/95
+[2025-08-24 00:34:13.029] FETCH ComfyRegistry Data [DONE]
+[2025-08-24 00:34:13.463] [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+[2025-08-24 00:34:14.630] nightly_channel: 
+[2025-08-24 00:34:14.631] https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/remote
+[2025-08-24 00:34:14.651] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[2025-08-24 00:34:15.052] [ComfyUI-Manager] All startup tasks have been completed.
+[2025-08-24 00:34:16.786] Requested to load QwenImage
+[2025-08-24 00:34:54.710] loaded partially 5597.674919891358 5593.482971191406 0
+[2025-08-24 00:40:34.174] 100%|██████████| 20/20 [05:39<00:00, 31.30s/it]100%|██████████| 20/20 [05:39<00:00, 16.96s/it]
+[2025-08-24 00:40:34.177] Requested to load WanVAE
+[2025-08-24 00:40:41.896] loaded completely 1452.400390625 242.02829551696777 True
+[2025-08-24 00:40:42.906] ;Prompt executed in ;444.69 seconds
+[2025-08-24 00:40:45.615] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 00:40:45.626] got prompt
+[2025-08-24 00:40:47.133] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 00:45:41.365] 100%|██████████| 20/20 [04:54<00:00, 10.55s/it]100%|██████████| 20/20 [04:54<00:00, 14.71s/it]
+[2025-08-24 00:45:41.368] Requested to load WanVAE
+[2025-08-24 00:45:44.802] loaded completely 478.083984375 242.02829551696777 True
+[2025-08-24 00:45:45.128] ;Prompt executed in ;299.50 seconds
+[2025-08-24 00:45:47.155] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 00:45:47.166] got prompt
+[2025-08-24 00:45:48.409] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 00:49:49.627] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 00:49:49.629] Requested to load WanVAE
+[2025-08-24 00:49:52.716] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 00:49:52.961] ;Prompt executed in ;245.79 seconds
+[2025-08-24 00:49:55.236] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 00:49:55.242] got prompt
+[2025-08-24 00:49:56.161] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 00:53:57.009] 100%|██████████| 20/20 [04:00<00:00, 10.49s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 00:53:57.011] Requested to load WanVAE
+[2025-08-24 00:53:58.290] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 00:53:58.462] ;Prompt executed in ;243.22 seconds
+[2025-08-24 00:54:00.849] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 00:54:00.855] got prompt
+[2025-08-24 00:54:01.784] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 00:58:02.664] 100%|██████████| 20/20 [04:00<00:00, 10.49s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 00:58:02.666] Requested to load WanVAE
+[2025-08-24 00:58:03.785] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 00:58:03.955] ;Prompt executed in ;243.10 seconds
+[2025-08-24 00:58:06.344] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 00:58:06.349] got prompt
+[2025-08-24 00:58:07.316] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:02:08.285] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.05s/it]
+[2025-08-24 01:02:08.287] Requested to load WanVAE
+[2025-08-24 01:02:09.543] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:02:09.715] ;Prompt executed in ;243.37 seconds
+[2025-08-24 01:02:11.695] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:02:11.702] got prompt
+[2025-08-24 01:02:11.749] Requested to load QwenImageTEModel_
+[2025-08-24 01:02:26.106] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 01:02:32.121] Requested to load QwenImage
+[2025-08-24 01:02:40.027] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:06:47.158] 100%|██████████| 20/20 [04:07<00:00, 10.49s/it]100%|██████████| 20/20 [04:07<00:00, 12.36s/it]
+[2025-08-24 01:06:47.160] Requested to load WanVAE
+[2025-08-24 01:06:48.576] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:06:48.810] ;Prompt executed in ;277.11 seconds
+[2025-08-24 01:06:51.383] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:06:51.389] got prompt
+[2025-08-24 01:06:52.461] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:10:53.104] 100%|██████████| 20/20 [04:00<00:00, 10.48s/it]100%|██████████| 20/20 [04:00<00:00, 12.03s/it]
+[2025-08-24 01:10:53.106] Requested to load WanVAE
+[2025-08-24 01:10:54.332] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:10:54.501] ;Prompt executed in ;243.11 seconds
+[2025-08-24 01:10:56.587] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:10:56.594] got prompt
+[2025-08-24 01:10:57.508] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:14:58.221] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 01:14:58.223] Requested to load WanVAE
+[2025-08-24 01:14:59.343] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:14:59.512] ;Prompt executed in ;242.92 seconds
+[2025-08-24 01:15:01.907] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:15:01.914] got prompt
+[2025-08-24 01:15:03.279] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:19:04.050] 100%|██████████| 20/20 [04:00<00:00, 10.49s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 01:19:04.052] Requested to load WanVAE
+[2025-08-24 01:19:05.150] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:19:05.316] ;Prompt executed in ;243.40 seconds
+[2025-08-24 01:19:08.596] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:19:08.602] got prompt
+[2025-08-24 01:19:09.533] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:23:10.331] 100%|██████████| 20/20 [04:00<00:00, 10.51s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 01:23:10.332] Requested to load WanVAE
+[2025-08-24 01:23:11.455] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:23:11.626] ;Prompt executed in ;243.02 seconds
+[2025-08-24 01:23:18.226] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:23:18.233] got prompt
+[2025-08-24 01:23:19.334] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:27:20.560] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 01:27:20.562] Requested to load WanVAE
+[2025-08-24 01:27:21.685] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:27:21.859] ;Prompt executed in ;243.62 seconds
+[2025-08-24 01:27:23.687] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:27:23.695] got prompt
+[2025-08-24 01:27:24.621] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:31:25.754] 100%|██████████| 20/20 [04:01<00:00, 10.53s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 01:31:25.756] Requested to load WanVAE
+[2025-08-24 01:31:26.950] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:31:27.115] ;Prompt executed in ;243.42 seconds
+[2025-08-24 01:31:28.697] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:31:28.703] got prompt
+[2025-08-24 01:31:29.634] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:35:30.703] 100%|██████████| 20/20 [04:01<00:00, 10.50s/it]100%|██████████| 20/20 [04:01<00:00, 12.05s/it]
+[2025-08-24 01:35:30.704] Requested to load WanVAE
+[2025-08-24 01:35:31.852] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:35:32.018] ;Prompt executed in ;243.31 seconds
+[2025-08-24 01:35:33.979] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:35:33.985] got prompt
+[2025-08-24 01:35:34.018] Requested to load QwenImageTEModel_
+[2025-08-24 01:36:02.342] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 01:36:05.427] Requested to load QwenImage
+[2025-08-24 01:36:13.325] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:40:22.244] 100%|██████████| 20/20 [04:08<00:00, 10.51s/it]100%|██████████| 20/20 [04:08<00:00, 12.45s/it]
+[2025-08-24 01:40:22.246] Requested to load WanVAE
+[2025-08-24 01:40:25.219] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:40:27.650] ;Prompt executed in ;293.66 seconds
+[2025-08-24 01:40:30.199] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:40:30.204] got prompt
+[2025-08-24 01:40:31.102] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:44:32.210] 100%|██████████| 20/20 [04:01<00:00, 10.50s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 01:44:32.224] Requested to load WanVAE
+[2025-08-24 01:44:33.362] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:44:33.539] ;Prompt executed in ;243.33 seconds
+[2025-08-24 01:44:36.123] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:44:36.129] got prompt
+[2025-08-24 01:44:37.031] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:48:38.065] 100%|██████████| 20/20 [04:01<00:00, 10.50s/it]100%|██████████| 20/20 [04:01<00:00, 12.05s/it]
+[2025-08-24 01:48:38.067] Requested to load WanVAE
+[2025-08-24 01:48:39.168] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:48:39.339] ;Prompt executed in ;243.21 seconds
+[2025-08-24 01:48:41.777] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:48:41.783] got prompt
+[2025-08-24 01:48:42.708] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:52:43.468] 100%|██████████| 20/20 [04:00<00:00, 10.49s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 01:52:43.470] Requested to load WanVAE
+[2025-08-24 01:52:44.593] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:52:44.766] ;Prompt executed in ;242.98 seconds
+[2025-08-24 01:52:46.824] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:52:46.829] got prompt
+[2025-08-24 01:52:47.768] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 01:56:48.584] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 01:56:48.585] Requested to load WanVAE
+[2025-08-24 01:56:49.723] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 01:56:49.893] ;Prompt executed in ;243.06 seconds
+[2025-08-24 01:56:52.023] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 01:56:52.030] got prompt
+[2025-08-24 01:56:52.969] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:00:54.068] 100%|██████████| 20/20 [04:01<00:00, 10.50s/it]100%|██████████| 20/20 [04:01<00:00, 12.05s/it]
+[2025-08-24 02:00:54.069] Requested to load WanVAE
+[2025-08-24 02:00:55.158] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:00:55.331] ;Prompt executed in ;243.30 seconds
+[2025-08-24 02:00:57.465] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:00:57.471] got prompt
+[2025-08-24 02:00:58.401] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:04:59.358] 100%|██████████| 20/20 [04:00<00:00, 10.49s/it]100%|██████████| 20/20 [04:00<00:00, 12.05s/it]
+[2025-08-24 02:04:59.360] Requested to load WanVAE
+[2025-08-24 02:05:00.513] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:05:00.683] ;Prompt executed in ;243.21 seconds
+[2025-08-24 02:05:02.557] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:05:02.563] got prompt
+[2025-08-24 02:05:03.506] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:09:04.381] 100%|██████████| 20/20 [04:00<00:00, 10.49s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 02:09:04.383] Requested to load WanVAE
+[2025-08-24 02:09:05.501] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:09:05.673] ;Prompt executed in ;243.11 seconds
+[2025-08-24 02:09:07.829] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:09:07.835] got prompt
+[2025-08-24 02:09:07.912] Requested to load QwenImageTEModel_
+[2025-08-24 02:09:35.438] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 02:09:41.637] Requested to load QwenImage
+[2025-08-24 02:09:47.412] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:13:56.950] 100%|██████████| 20/20 [04:09<00:00, 10.50s/it]100%|██████████| 20/20 [04:09<00:00, 12.48s/it]
+[2025-08-24 02:13:56.952] Requested to load WanVAE
+[2025-08-24 02:13:58.096] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:13:58.340] ;Prompt executed in ;290.50 seconds
+[2025-08-24 02:14:00.577] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:14:00.583] got prompt
+[2025-08-24 02:14:01.513] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:18:02.304] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 02:18:02.306] Requested to load WanVAE
+[2025-08-24 02:18:06.838] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:18:07.157] ;Prompt executed in ;246.57 seconds
+[2025-08-24 02:18:08.874] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:18:08.880] got prompt
+[2025-08-24 02:18:09.821] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:22:10.596] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 02:22:10.597] Requested to load WanVAE
+[2025-08-24 02:22:11.699] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:22:11.864] ;Prompt executed in ;242.98 seconds
+[2025-08-24 02:22:14.304] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:22:14.311] got prompt
+[2025-08-24 02:22:15.245] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:26:16.025] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 02:26:16.026] Requested to load WanVAE
+[2025-08-24 02:26:17.127] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:26:17.293] ;Prompt executed in ;242.98 seconds
+[2025-08-24 02:26:19.345] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:26:19.352] got prompt
+[2025-08-24 02:26:20.261] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:30:21.156] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 02:30:21.157] Requested to load WanVAE
+[2025-08-24 02:30:22.352] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:30:22.528] ;Prompt executed in ;243.17 seconds
+[2025-08-24 02:30:24.409] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:30:24.415] got prompt
+[2025-08-24 02:30:25.360] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:34:26.110] 100%|██████████| 20/20 [04:00<00:00, 10.49s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 02:34:26.111] Requested to load WanVAE
+[2025-08-24 02:34:27.349] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:34:27.515] ;Prompt executed in ;243.09 seconds
+[2025-08-24 02:34:29.658] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:34:29.664] got prompt
+[2025-08-24 02:34:30.596] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:38:31.231] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.03s/it]
+[2025-08-24 02:38:31.232] Requested to load WanVAE
+[2025-08-24 02:38:32.358] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:38:32.529] ;Prompt executed in ;242.86 seconds
+[2025-08-24 02:38:34.681] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:38:34.687] got prompt
+[2025-08-24 02:38:35.645] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:42:36.465] 100%|██████████| 20/20 [04:00<00:00, 10.50s/it]100%|██████████| 20/20 [04:00<00:00, 12.04s/it]
+[2025-08-24 02:42:36.466] Requested to load WanVAE
+[2025-08-24 02:42:37.618] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 02:42:37.783] ;Prompt executed in ;243.09 seconds
+[2025-08-24 02:42:40.167] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:42:40.173] got prompt
+[2025-08-24 02:42:40.204] Requested to load QwenImageTEModel_
+[2025-08-24 02:43:10.095] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 02:43:16.093] Requested to load QwenImage
+[2025-08-24 02:43:21.259] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:47:31.358] 100%|██████████| 20/20 [04:09<00:00, 10.54s/it]100%|██████████| 20/20 [04:09<00:00, 12.50s/it]
+[2025-08-24 02:47:31.361] Requested to load WanVAE
+[2025-08-24 02:47:32.487] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 02:47:32.727] ;Prompt executed in ;292.55 seconds
+[2025-08-24 02:47:34.991] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:47:34.999] got prompt
+[2025-08-24 02:47:35.938] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:51:37.525] 100%|██████████| 20/20 [04:01<00:00, 10.53s/it]100%|██████████| 20/20 [04:01<00:00, 12.08s/it]
+[2025-08-24 02:51:37.527] Requested to load WanVAE
+[2025-08-24 02:51:38.630] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 02:51:38.815] ;Prompt executed in ;243.80 seconds
+[2025-08-24 02:51:40.444] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:51:40.450] got prompt
+[2025-08-24 02:51:41.365] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:55:43.074] 100%|██████████| 20/20 [04:01<00:00, 10.53s/it]100%|██████████| 20/20 [04:01<00:00, 12.09s/it]
+[2025-08-24 02:55:43.076] Requested to load WanVAE
+[2025-08-24 02:55:44.177] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 02:55:44.352] ;Prompt executed in ;243.90 seconds
+[2025-08-24 02:55:46.669] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:55:46.676] got prompt
+[2025-08-24 02:55:47.587] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 02:59:49.448] 100%|██████████| 20/20 [04:01<00:00, 10.54s/it]100%|██████████| 20/20 [04:01<00:00, 12.09s/it]
+[2025-08-24 02:59:49.450] Requested to load WanVAE
+[2025-08-24 02:59:50.549] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 02:59:50.732] ;Prompt executed in ;244.05 seconds
+[2025-08-24 02:59:52.902] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 02:59:52.910] got prompt
+[2025-08-24 02:59:53.823] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:03:55.609] 100%|██████████| 20/20 [04:01<00:00, 10.54s/it]100%|██████████| 20/20 [04:01<00:00, 12.09s/it]
+[2025-08-24 03:03:55.611] Requested to load WanVAE
+[2025-08-24 03:03:56.761] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:03:56.945] ;Prompt executed in ;244.03 seconds
+[2025-08-24 03:04:00.061] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:04:00.068] got prompt
+[2025-08-24 03:04:01.002] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:08:02.867] 100%|██████████| 20/20 [04:01<00:00, 10.54s/it]100%|██████████| 20/20 [04:01<00:00, 12.09s/it]
+[2025-08-24 03:08:02.869] Requested to load WanVAE
+[2025-08-24 03:08:03.989] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:08:04.169] ;Prompt executed in ;244.10 seconds
+[2025-08-24 03:08:06.535] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:08:06.541] got prompt
+[2025-08-24 03:08:07.474] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:12:09.333] 100%|██████████| 20/20 [04:01<00:00, 10.53s/it]100%|██████████| 20/20 [04:01<00:00, 12.09s/it]
+[2025-08-24 03:12:09.334] Requested to load WanVAE
+[2025-08-24 03:12:10.443] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:12:10.626] ;Prompt executed in ;244.08 seconds
+[2025-08-24 03:12:12.281] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:12:12.286] got prompt
+[2025-08-24 03:12:13.191] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:16:14.884] 100%|██████████| 20/20 [04:01<00:00, 10.53s/it]100%|██████████| 20/20 [04:01<00:00, 12.08s/it]
+[2025-08-24 03:16:14.885] Requested to load WanVAE
+[2025-08-24 03:16:15.993] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:16:16.174] ;Prompt executed in ;243.89 seconds
+[2025-08-24 03:16:37.215] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:16:37.220] got prompt
+[2025-08-24 03:16:37.246] Requested to load QwenImageTEModel_
+[2025-08-24 03:17:00.711] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 03:17:04.313] Requested to load QwenImage
+[2025-08-24 03:17:11.028] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:21:20.176] 100%|██████████| 20/20 [04:09<00:00, 10.53s/it]100%|██████████| 20/20 [04:09<00:00, 12.45s/it]
+[2025-08-24 03:21:20.178] Requested to load WanVAE
+[2025-08-24 03:21:21.389] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:21:21.630] ;Prompt executed in ;284.41 seconds
+[2025-08-24 03:21:23.853] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:21:23.858] got prompt
+[2025-08-24 03:21:24.816] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:25:26.538] 100%|██████████| 20/20 [04:01<00:00, 10.53s/it]100%|██████████| 20/20 [04:01<00:00, 12.09s/it]
+[2025-08-24 03:25:26.539] Requested to load WanVAE
+[2025-08-24 03:25:27.768] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:25:27.959] ;Prompt executed in ;244.10 seconds
+[2025-08-24 03:25:29.982] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:25:29.989] got prompt
+[2025-08-24 03:25:30.895] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:29:32.448] 100%|██████████| 20/20 [04:01<00:00, 10.50s/it]100%|██████████| 20/20 [04:01<00:00, 12.08s/it]
+[2025-08-24 03:29:32.450] Requested to load WanVAE
+[2025-08-24 03:29:33.535] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:29:33.713] ;Prompt executed in ;243.72 seconds
+[2025-08-24 03:29:35.261] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:29:35.267] got prompt
+[2025-08-24 03:29:36.161] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:33:37.525] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.07s/it]
+[2025-08-24 03:33:37.526] Requested to load WanVAE
+[2025-08-24 03:33:38.776] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:33:38.955] ;Prompt executed in ;243.69 seconds
+[2025-08-24 03:33:40.907] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:33:40.914] got prompt
+[2025-08-24 03:33:41.905] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:37:43.368] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.07s/it]
+[2025-08-24 03:37:43.369] Requested to load WanVAE
+[2025-08-24 03:37:44.553] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:37:44.730] ;Prompt executed in ;243.81 seconds
+[2025-08-24 03:37:46.148] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:37:46.154] got prompt
+[2025-08-24 03:37:47.165] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:41:48.451] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 03:41:48.453] Requested to load WanVAE
+[2025-08-24 03:41:49.609] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:41:49.783] ;Prompt executed in ;243.63 seconds
+[2025-08-24 03:41:51.680] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:41:51.686] got prompt
+[2025-08-24 03:41:52.644] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:45:53.881] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 03:45:53.883] Requested to load WanVAE
+[2025-08-24 03:45:55.021] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:45:55.198] ;Prompt executed in ;243.51 seconds
+[2025-08-24 03:45:56.899] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:45:56.905] got prompt
+[2025-08-24 03:45:57.844] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:49:59.139] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 03:49:59.141] Requested to load WanVAE
+[2025-08-24 03:50:00.302] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:50:00.476] ;Prompt executed in ;243.57 seconds
+[2025-08-24 03:50:02.529] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:50:02.535] got prompt
+[2025-08-24 03:50:02.575] Requested to load QwenImageTEModel_
+[2025-08-24 03:50:35.174] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 03:50:39.251] Requested to load QwenImage
+[2025-08-24 03:50:45.838] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:54:55.498] 100%|██████████| 20/20 [04:09<00:00, 10.51s/it]100%|██████████| 20/20 [04:09<00:00, 12.48s/it]
+[2025-08-24 03:54:55.501] Requested to load WanVAE
+[2025-08-24 03:54:56.635] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:54:56.864] ;Prompt executed in ;294.33 seconds
+[2025-08-24 03:54:58.794] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:54:58.800] got prompt
+[2025-08-24 03:54:59.712] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 03:59:00.843] 100%|██████████| 20/20 [04:01<00:00, 10.50s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 03:59:00.845] Requested to load WanVAE
+[2025-08-24 03:59:01.929] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 03:59:02.122] ;Prompt executed in ;243.31 seconds
+[2025-08-24 03:59:04.106] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 03:59:04.111] got prompt
+[2025-08-24 03:59:04.984] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:03:05.991] 100%|██████████| 20/20 [04:01<00:00, 10.50s/it]100%|██████████| 20/20 [04:01<00:00, 12.05s/it]
+[2025-08-24 04:03:05.992] Requested to load WanVAE
+[2025-08-24 04:03:07.074] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:03:07.255] ;Prompt executed in ;243.14 seconds
+[2025-08-24 04:03:09.383] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:03:09.389] got prompt
+[2025-08-24 04:03:10.351] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:07:11.485] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 04:07:11.486] Requested to load WanVAE
+[2025-08-24 04:07:12.561] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:07:12.733] ;Prompt executed in ;243.34 seconds
+[2025-08-24 04:07:14.519] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:07:14.525] got prompt
+[2025-08-24 04:07:15.451] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:11:16.758] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.07s/it]
+[2025-08-24 04:11:16.759] Requested to load WanVAE
+[2025-08-24 04:11:17.845] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:11:18.027] ;Prompt executed in ;243.50 seconds
+[2025-08-24 04:11:20.571] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:11:20.576] got prompt
+[2025-08-24 04:11:21.495] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:15:22.712] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 04:15:22.713] Requested to load WanVAE
+[2025-08-24 04:15:23.787] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:15:23.961] ;Prompt executed in ;243.38 seconds
+[2025-08-24 04:15:25.712] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:15:25.717] got prompt
+[2025-08-24 04:15:26.629] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:19:28.025] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.07s/it]
+[2025-08-24 04:19:28.026] Requested to load WanVAE
+[2025-08-24 04:19:29.116] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:19:29.287] ;Prompt executed in ;243.57 seconds
+[2025-08-24 04:19:30.783] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:19:30.790] got prompt
+[2025-08-24 04:19:31.696] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:23:33.126] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.07s/it]
+[2025-08-24 04:23:33.128] Requested to load WanVAE
+[2025-08-24 04:23:34.242] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:23:34.419] ;Prompt executed in ;243.63 seconds
+[2025-08-24 04:23:35.925] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:23:35.932] got prompt
+[2025-08-24 04:23:35.952] Requested to load QwenImageTEModel_
+[2025-08-24 04:24:16.130] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 04:24:18.480] Requested to load QwenImage
+[2025-08-24 04:24:24.035] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:28:36.941] 100%|██████████| 20/20 [04:12<00:00, 10.53s/it]100%|██████████| 20/20 [04:12<00:00, 12.64s/it]
+[2025-08-24 04:28:36.944] Requested to load WanVAE
+[2025-08-24 04:28:38.318] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:28:38.608] ;Prompt executed in ;302.67 seconds
+[2025-08-24 04:28:40.773] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:28:40.780] got prompt
+[2025-08-24 04:28:44.204] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:32:45.602] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.07s/it]
+[2025-08-24 04:32:45.604] Requested to load WanVAE
+[2025-08-24 04:32:46.790] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:32:46.966] ;Prompt executed in ;246.18 seconds
+[2025-08-24 04:32:48.883] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:32:48.889] got prompt
+[2025-08-24 04:32:49.819] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:36:50.915] 100%|██████████| 20/20 [04:01<00:00, 10.49s/it]100%|██████████| 20/20 [04:01<00:00, 12.05s/it]
+[2025-08-24 04:36:50.930] Requested to load WanVAE
+[2025-08-24 04:36:52.039] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:36:52.221] ;Prompt executed in ;243.31 seconds
+[2025-08-24 04:37:09.636] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:37:09.642] got prompt
+[2025-08-24 04:37:10.725] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:41:11.872] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 04:41:11.874] Requested to load WanVAE
+[2025-08-24 04:41:12.974] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:41:13.154] ;Prompt executed in ;243.51 seconds
+[2025-08-24 04:41:14.870] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:41:14.876] got prompt
+[2025-08-24 04:41:15.793] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:45:17.120] 100%|██████████| 20/20 [04:01<00:00, 10.52s/it]100%|██████████| 20/20 [04:01<00:00, 12.07s/it]
+[2025-08-24 04:45:17.121] Requested to load WanVAE
+[2025-08-24 04:45:18.244] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:45:18.421] ;Prompt executed in ;243.54 seconds
+[2025-08-24 04:45:21.298] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:45:21.304] got prompt
+[2025-08-24 04:45:22.218] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:49:23.243] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.05s/it]
+[2025-08-24 04:49:23.245] Requested to load WanVAE
+[2025-08-24 04:49:24.354] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:49:24.531] ;Prompt executed in ;243.23 seconds
+[2025-08-24 04:49:26.352] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:49:26.358] got prompt
+[2025-08-24 04:49:27.261] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:53:28.500] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 04:53:28.502] Requested to load WanVAE
+[2025-08-24 04:53:29.609] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:53:29.785] ;Prompt executed in ;243.43 seconds
+[2025-08-24 04:53:31.523] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:53:31.530] got prompt
+[2025-08-24 04:53:32.448] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 04:57:33.692] 100%|██████████| 20/20 [04:01<00:00, 10.51s/it]100%|██████████| 20/20 [04:01<00:00, 12.06s/it]
+[2025-08-24 04:57:33.693] Requested to load WanVAE
+[2025-08-24 04:57:34.809] loaded completely 412.31640625 242.02829551696777 True
+[2025-08-24 04:57:34.985] ;Prompt executed in ;243.45 seconds
+[2025-08-24 04:57:36.972] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 04:57:36.978] got prompt
+[2025-08-24 04:57:37.012] Requested to load QwenImageTEModel_
+[2025-08-24 04:58:16.189] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 04:58:18.848] Requested to load QwenImage
+[2025-08-24 04:58:25.899] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:00:41.782] 100%|██████████| 20/20 [02:15<00:00,  6.20s/it]100%|██████████| 20/20 [02:15<00:00,  6.79s/it]
+[2025-08-24 05:00:41.796] Requested to load WanVAE
+[2025-08-24 05:00:42.966] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:00:43.215] ;Prompt executed in ;186.23 seconds
+[2025-08-24 05:00:45.463] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:00:45.469] got prompt
+[2025-08-24 05:00:46.442] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:02:50.194] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.19s/it]
+[2025-08-24 05:02:50.196] Requested to load WanVAE
+[2025-08-24 05:02:51.308] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:02:51.487] ;Prompt executed in ;126.01 seconds
+[2025-08-24 05:02:53.758] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:02:53.765] got prompt
+[2025-08-24 05:02:54.719] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:04:58.519] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.19s/it]
+[2025-08-24 05:04:58.520] Requested to load WanVAE
+[2025-08-24 05:04:59.622] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:04:59.799] ;Prompt executed in ;126.02 seconds
+[2025-08-24 05:05:02.108] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:05:02.114] got prompt
+[2025-08-24 05:05:03.049] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:07:06.759] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.19s/it]
+[2025-08-24 05:07:06.760] Requested to load WanVAE
+[2025-08-24 05:07:07.876] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:07:08.054] ;Prompt executed in ;125.94 seconds
+[2025-08-24 05:07:10.267] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:07:10.273] got prompt
+[2025-08-24 05:07:11.199] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:09:14.898] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:09:14.899] Requested to load WanVAE
+[2025-08-24 05:09:16.020] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:09:16.198] ;Prompt executed in ;125.92 seconds
+[2025-08-24 05:09:18.717] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:09:18.735] got prompt
+[2025-08-24 05:09:19.667] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:11:23.325] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:11:23.326] Requested to load WanVAE
+[2025-08-24 05:11:24.461] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:11:24.639] ;Prompt executed in ;125.90 seconds
+[2025-08-24 05:11:27.087] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:11:27.094] got prompt
+[2025-08-24 05:11:28.027] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:13:31.745] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.19s/it]
+[2025-08-24 05:13:31.746] Requested to load WanVAE
+[2025-08-24 05:13:32.864] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:13:33.045] ;Prompt executed in ;125.95 seconds
+[2025-08-24 05:13:35.644] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:13:35.649] got prompt
+[2025-08-24 05:13:36.593] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:15:40.512] 100%|██████████| 20/20 [02:03<00:00,  6.20s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 05:15:40.513] Requested to load WanVAE
+[2025-08-24 05:15:41.655] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:15:41.835] ;Prompt executed in ;126.18 seconds
+[2025-08-24 05:15:44.859] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:15:44.866] got prompt
+[2025-08-24 05:15:44.904] Requested to load QwenImageTEModel_
+[2025-08-24 05:16:21.191] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 05:16:23.893] Requested to load QwenImage
+[2025-08-24 05:16:29.120] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:18:42.854] 100%|██████████| 20/20 [02:13<00:00,  6.19s/it]100%|██████████| 20/20 [02:13<00:00,  6.69s/it]
+[2025-08-24 05:18:42.857] Requested to load WanVAE
+[2025-08-24 05:18:43.989] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:18:44.265] ;Prompt executed in ;179.40 seconds
+[2025-08-24 05:18:46.250] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:18:46.257] got prompt
+[2025-08-24 05:18:47.135] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:20:50.678] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:20:50.679] Requested to load WanVAE
+[2025-08-24 05:20:51.751] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:20:51.926] ;Prompt executed in ;125.66 seconds
+[2025-08-24 05:20:53.605] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:20:53.612] got prompt
+[2025-08-24 05:20:54.468] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:22:57.945] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 05:22:57.947] Requested to load WanVAE
+[2025-08-24 05:22:59.001] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:22:59.172] ;Prompt executed in ;125.56 seconds
+[2025-08-24 05:23:00.798] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:23:00.803] got prompt
+[2025-08-24 05:23:01.679] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:25:05.209] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:25:05.210] Requested to load WanVAE
+[2025-08-24 05:25:06.251] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:25:06.425] ;Prompt executed in ;125.62 seconds
+[2025-08-24 05:25:08.126] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:25:08.133] got prompt
+[2025-08-24 05:25:09.032] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:27:12.553] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:27:12.554] Requested to load WanVAE
+[2025-08-24 05:27:13.598] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:27:13.780] ;Prompt executed in ;125.64 seconds
+[2025-08-24 05:27:15.694] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:27:15.700] got prompt
+[2025-08-24 05:27:16.572] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:29:20.032] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 05:29:20.033] Requested to load WanVAE
+[2025-08-24 05:29:21.100] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:29:21.275] ;Prompt executed in ;125.57 seconds
+[2025-08-24 05:29:23.358] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:29:23.364] got prompt
+[2025-08-24 05:29:24.278] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:31:27.806] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:31:27.807] Requested to load WanVAE
+[2025-08-24 05:31:28.999] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:31:29.178] ;Prompt executed in ;125.80 seconds
+[2025-08-24 05:31:30.913] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:31:30.919] got prompt
+[2025-08-24 05:31:31.846] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:33:35.248] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 05:33:35.250] Requested to load WanVAE
+[2025-08-24 05:33:36.406] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 05:33:36.589] ;Prompt executed in ;125.67 seconds
+[2025-08-24 05:33:38.164] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:33:38.171] got prompt
+[2025-08-24 05:33:38.194] Requested to load QwenImageTEModel_
+[2025-08-24 05:34:13.233] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 05:34:15.297] Requested to load QwenImage
+[2025-08-24 05:34:21.784] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:36:36.566] 100%|██████████| 20/20 [02:14<00:00,  6.18s/it]100%|██████████| 20/20 [02:14<00:00,  6.74s/it]
+[2025-08-24 05:36:36.570] Requested to load WanVAE
+[2025-08-24 05:36:37.747] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:36:37.995] ;Prompt executed in ;179.82 seconds
+[2025-08-24 05:36:40.250] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:36:40.258] got prompt
+[2025-08-24 05:36:41.212] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:38:44.755] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:38:44.757] Requested to load WanVAE
+[2025-08-24 05:38:45.900] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:38:46.073] ;Prompt executed in ;125.81 seconds
+[2025-08-24 05:38:47.954] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:38:47.960] got prompt
+[2025-08-24 05:38:49.772] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:40:53.384] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:40:53.386] Requested to load WanVAE
+[2025-08-24 05:40:54.479] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:40:54.658] ;Prompt executed in ;126.70 seconds
+[2025-08-24 05:40:56.229] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:40:56.235] got prompt
+[2025-08-24 05:40:57.152] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:43:00.607] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 05:43:00.609] Requested to load WanVAE
+[2025-08-24 05:43:01.714] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:43:01.890] ;Prompt executed in ;125.65 seconds
+[2025-08-24 05:43:03.705] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:43:03.711] got prompt
+[2025-08-24 05:43:04.660] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:45:08.137] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 05:45:08.138] Requested to load WanVAE
+[2025-08-24 05:45:09.278] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:45:09.454] ;Prompt executed in ;125.74 seconds
+[2025-08-24 05:45:10.961] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:45:10.967] got prompt
+[2025-08-24 05:45:11.899] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:47:15.234] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 05:47:15.236] Requested to load WanVAE
+[2025-08-24 05:47:16.355] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:47:16.532] ;Prompt executed in ;125.55 seconds
+[2025-08-24 05:47:41.578] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:47:41.584] got prompt
+[2025-08-24 05:47:42.776] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:49:46.336] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:49:46.338] Requested to load WanVAE
+[2025-08-24 05:49:47.451] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:49:47.628] ;Prompt executed in ;126.04 seconds
+[2025-08-24 05:49:49.898] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:49:49.904] got prompt
+[2025-08-24 05:49:50.845] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:51:54.349] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:51:54.350] Requested to load WanVAE
+[2025-08-24 05:51:55.485] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:51:55.661] ;Prompt executed in ;125.76 seconds
+[2025-08-24 05:51:57.526] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:51:57.539] got prompt
+[2025-08-24 05:51:57.571] Requested to load QwenImageTEModel_
+[2025-08-24 05:52:33.309] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 05:52:36.172] Requested to load QwenImage
+[2025-08-24 05:52:42.032] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:54:54.795] 100%|██████████| 20/20 [02:12<00:00,  6.18s/it]100%|██████████| 20/20 [02:12<00:00,  6.64s/it]
+[2025-08-24 05:54:54.799] Requested to load WanVAE
+[2025-08-24 05:54:56.015] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:54:56.272] ;Prompt executed in ;178.73 seconds
+[2025-08-24 05:54:58.602] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:54:58.609] got prompt
+[2025-08-24 05:54:59.579] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:57:03.098] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.18s/it]
+[2025-08-24 05:57:03.100] Requested to load WanVAE
+[2025-08-24 05:57:04.219] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:57:04.396] ;Prompt executed in ;125.79 seconds
+[2025-08-24 05:57:06.456] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:57:06.464] got prompt
+[2025-08-24 05:57:07.422] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 05:59:10.908] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 05:59:10.909] Requested to load WanVAE
+[2025-08-24 05:59:12.022] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 05:59:12.213] ;Prompt executed in ;125.75 seconds
+[2025-08-24 05:59:14.453] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 05:59:14.462] got prompt
+[2025-08-24 05:59:15.416] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:01:18.801] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 06:01:18.803] Requested to load WanVAE
+[2025-08-24 06:01:19.909] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:01:20.083] ;Prompt executed in ;125.62 seconds
+[2025-08-24 06:01:21.772] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:01:21.777] got prompt
+[2025-08-24 06:01:22.707] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:03:25.989] 100%|██████████| 20/20 [02:03<00:00,  6.16s/it]100%|██████████| 20/20 [02:03<00:00,  6.16s/it]
+[2025-08-24 06:03:25.991] Requested to load WanVAE
+[2025-08-24 06:03:27.120] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:03:27.296] ;Prompt executed in ;125.52 seconds
+[2025-08-24 06:03:29.176] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:03:29.183] got prompt
+[2025-08-24 06:03:30.131] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:05:33.461] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 06:05:33.462] Requested to load WanVAE
+[2025-08-24 06:05:34.573] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:05:34.748] ;Prompt executed in ;125.56 seconds
+[2025-08-24 06:05:36.768] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:05:36.775] got prompt
+[2025-08-24 06:05:37.768] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:07:41.171] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 06:07:41.173] Requested to load WanVAE
+[2025-08-24 06:07:42.313] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:07:42.487] ;Prompt executed in ;125.71 seconds
+[2025-08-24 06:07:43.983] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:07:43.990] got prompt
+[2025-08-24 06:07:44.917] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:09:48.385] 100%|██████████| 20/20 [02:03<00:00,  6.17s/it]100%|██████████| 20/20 [02:03<00:00,  6.17s/it]
+[2025-08-24 06:09:48.386] Requested to load WanVAE
+[2025-08-24 06:09:49.485] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:09:49.665] ;Prompt executed in ;125.67 seconds
+[2025-08-24 06:09:51.295] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:09:51.302] got prompt
+[2025-08-24 06:09:51.333] Requested to load QwenImageTEModel_
+[2025-08-24 06:10:00.438] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 06:10:03.982] Requested to load QwenImage
+[2025-08-24 06:10:10.602] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:12:18.095] 100%|██████████| 20/20 [02:07<00:00,  6.20s/it]100%|██████████| 20/20 [02:07<00:00,  6.37s/it]
+[2025-08-24 06:12:18.096] Requested to load WanVAE
+[2025-08-24 06:12:19.338] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:12:19.558] ;Prompt executed in ;148.25 seconds
+[2025-08-24 06:12:21.549] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:12:21.555] got prompt
+[2025-08-24 06:12:22.485] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:14:26.679] 100%|██████████| 20/20 [02:04<00:00,  6.20s/it]100%|██████████| 20/20 [02:04<00:00,  6.21s/it]
+[2025-08-24 06:14:26.681] Requested to load WanVAE
+[2025-08-24 06:14:27.896] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:14:28.076] ;Prompt executed in ;126.52 seconds
+[2025-08-24 06:14:30.119] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:14:30.124] got prompt
+[2025-08-24 06:14:31.065] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:16:35.161] 100%|██████████| 20/20 [02:04<00:00,  6.20s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:16:35.163] Requested to load WanVAE
+[2025-08-24 06:16:36.374] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:16:36.562] ;Prompt executed in ;126.44 seconds
+[2025-08-24 06:16:38.448] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:16:38.455] got prompt
+[2025-08-24 06:16:39.386] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:18:43.480] 100%|██████████| 20/20 [02:04<00:00,  6.20s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:18:43.482] Requested to load WanVAE
+[2025-08-24 06:18:44.677] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:18:44.861] ;Prompt executed in ;126.40 seconds
+[2025-08-24 06:18:46.981] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:18:46.988] got prompt
+[2025-08-24 06:18:47.969] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:20:52.058] 100%|██████████| 20/20 [02:04<00:00,  6.19s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:20:52.060] Requested to load WanVAE
+[2025-08-24 06:20:53.238] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:20:53.411] ;Prompt executed in ;126.42 seconds
+[2025-08-24 06:20:55.272] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:20:55.278] got prompt
+[2025-08-24 06:20:56.232] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:23:00.346] 100%|██████████| 20/20 [02:04<00:00,  6.19s/it]100%|██████████| 20/20 [02:04<00:00,  6.21s/it]
+[2025-08-24 06:23:00.348] Requested to load WanVAE
+[2025-08-24 06:23:01.566] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:23:01.743] ;Prompt executed in ;126.46 seconds
+[2025-08-24 06:23:03.462] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:23:03.468] got prompt
+[2025-08-24 06:23:04.489] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:25:08.536] 100%|██████████| 20/20 [02:04<00:00,  6.20s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:25:08.537] Requested to load WanVAE
+[2025-08-24 06:25:09.762] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:25:09.935] ;Prompt executed in ;126.47 seconds
+[2025-08-24 06:25:11.866] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:25:11.872] got prompt
+[2025-08-24 06:25:12.798] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:27:16.871] 100%|██████████| 20/20 [02:04<00:00,  6.20s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:27:16.873] Requested to load WanVAE
+[2025-08-24 06:27:18.032] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:27:18.207] ;Prompt executed in ;126.33 seconds
+[2025-08-24 06:27:20.196] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:27:20.202] got prompt
+[2025-08-24 06:27:20.225] Requested to load QwenImageTEModel_
+[2025-08-24 06:27:44.629] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 06:27:50.253] Requested to load QwenImage
+[2025-08-24 06:27:55.936] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:30:05.998] 100%|██████████| 20/20 [02:09<00:00,  6.19s/it]100%|██████████| 20/20 [02:09<00:00,  6.50s/it]
+[2025-08-24 06:30:06.000] Requested to load WanVAE
+[2025-08-24 06:30:07.200] loaded completely 370.048828125 242.02829551696777 True
+[2025-08-24 06:30:07.488] ;Prompt executed in ;167.28 seconds
+[2025-08-24 06:30:09.597] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:30:09.608] got prompt
+[2025-08-24 06:30:10.582] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:32:14.450] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.19s/it]
+[2025-08-24 06:32:14.452] Requested to load WanVAE
+[2025-08-24 06:32:15.723] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:32:15.899] ;Prompt executed in ;126.29 seconds
+[2025-08-24 06:32:30.395] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:32:30.402] got prompt
+[2025-08-24 06:32:31.587] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:34:35.548] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 06:34:35.549] Requested to load WanVAE
+[2025-08-24 06:34:36.805] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:34:36.980] ;Prompt executed in ;126.58 seconds
+[2025-08-24 06:34:39.009] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:34:39.015] got prompt
+[2025-08-24 06:34:40.002] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:36:43.788] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.19s/it]
+[2025-08-24 06:36:43.789] Requested to load WanVAE
+[2025-08-24 06:36:45.059] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:36:45.234] ;Prompt executed in ;126.22 seconds
+[2025-08-24 06:36:47.341] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:36:47.346] got prompt
+[2025-08-24 06:36:48.335] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:38:52.258] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 06:38:52.259] Requested to load WanVAE
+[2025-08-24 06:38:53.449] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:38:53.633] ;Prompt executed in ;126.28 seconds
+[2025-08-24 06:38:55.604] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:38:55.609] got prompt
+[2025-08-24 06:38:56.586] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:41:00.592] 100%|██████████| 20/20 [02:04<00:00,  6.19s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:41:00.594] Requested to load WanVAE
+[2025-08-24 06:41:01.831] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:41:02.007] ;Prompt executed in ;126.40 seconds
+[2025-08-24 06:41:22.738] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:41:22.744] got prompt
+[2025-08-24 06:41:23.867] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:43:27.969] 100%|██████████| 20/20 [02:04<00:00,  6.20s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:43:27.971] Requested to load WanVAE
+[2025-08-24 06:43:29.335] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:43:29.513] ;Prompt executed in ;126.77 seconds
+[2025-08-24 06:43:31.322] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:43:31.328] got prompt
+[2025-08-24 06:43:32.347] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:45:36.425] 100%|██████████| 20/20 [02:04<00:00,  6.19s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:45:36.427] Requested to load WanVAE
+[2025-08-24 06:45:37.790] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:45:37.964] ;Prompt executed in ;126.63 seconds
+[2025-08-24 06:45:39.753] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:45:39.759] got prompt
+[2025-08-24 06:45:42.103] Requested to load QwenImageTEModel_
+[2025-08-24 06:46:10.066] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 06:46:12.472] Requested to load QwenImage
+[2025-08-24 06:46:17.498] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:48:30.054] 100%|██████████| 20/20 [02:12<00:00,  6.20s/it]100%|██████████| 20/20 [02:12<00:00,  6.62s/it]
+[2025-08-24 06:48:30.056] Requested to load WanVAE
+[2025-08-24 06:48:31.399] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:48:31.638] ;Prompt executed in ;171.88 seconds
+[2025-08-24 06:48:33.760] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:48:33.767] got prompt
+[2025-08-24 06:48:34.746] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:50:38.805] 100%|██████████| 20/20 [02:04<00:00,  6.19s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:50:38.807] Requested to load WanVAE
+[2025-08-24 06:50:40.071] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:50:40.245] ;Prompt executed in ;126.48 seconds
+[2025-08-24 06:50:42.161] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:50:42.168] got prompt
+[2025-08-24 06:50:43.145] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:52:47.141] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 06:52:47.142] Requested to load WanVAE
+[2025-08-24 06:52:48.420] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:52:48.597] ;Prompt executed in ;126.43 seconds
+[2025-08-24 06:52:50.531] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:52:50.538] got prompt
+[2025-08-24 06:52:51.569] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:54:55.512] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 06:54:55.514] Requested to load WanVAE
+[2025-08-24 06:54:56.778] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:54:56.956] ;Prompt executed in ;126.42 seconds
+[2025-08-24 06:54:58.929] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:54:58.936] got prompt
+[2025-08-24 06:54:59.897] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:57:03.902] 100%|██████████| 20/20 [02:04<00:00,  6.19s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:57:03.903] Requested to load WanVAE
+[2025-08-24 06:57:05.168] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:57:05.353] ;Prompt executed in ;126.42 seconds
+[2025-08-24 06:57:07.204] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:57:07.210] got prompt
+[2025-08-24 06:57:08.209] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 06:59:12.270] 100%|██████████| 20/20 [02:04<00:00,  6.20s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 06:59:12.272] Requested to load WanVAE
+[2025-08-24 06:59:13.557] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 06:59:13.741] ;Prompt executed in ;126.53 seconds
+[2025-08-24 06:59:16.158] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 06:59:16.164] got prompt
+[2025-08-24 06:59:17.132] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:01:21.109] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 07:01:21.110] Requested to load WanVAE
+[2025-08-24 07:01:22.369] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:01:22.544] ;Prompt executed in ;126.38 seconds
+[2025-08-24 07:01:24.500] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:01:24.508] got prompt
+[2025-08-24 07:01:25.482] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:03:29.527] 100%|██████████| 20/20 [02:04<00:00,  6.19s/it]100%|██████████| 20/20 [02:04<00:00,  6.20s/it]
+[2025-08-24 07:03:29.529] Requested to load WanVAE
+[2025-08-24 07:03:30.789] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:03:30.962] ;Prompt executed in ;126.45 seconds
+[2025-08-24 07:03:32.890] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:03:32.896] got prompt
+[2025-08-24 07:03:32.920] Requested to load QwenImageTEModel_
+[2025-08-24 07:03:57.519] loaded partially 5589.675 5589.674587249756 0
+[2025-08-24 07:04:00.818] Requested to load QwenImage
+[2025-08-24 07:04:05.679] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:06:12.669] 100%|██████████| 20/20 [02:06<00:00,  6.19s/it]100%|██████████| 20/20 [02:06<00:00,  6.35s/it]
+[2025-08-24 07:06:12.671] Requested to load WanVAE
+[2025-08-24 07:06:13.867] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:06:14.099] ;Prompt executed in ;161.20 seconds
+[2025-08-24 07:06:16.091] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:06:16.097] got prompt
+[2025-08-24 07:06:17.086] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:08:21.031] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 07:08:21.033] Requested to load WanVAE
+[2025-08-24 07:08:22.310] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:08:22.484] ;Prompt executed in ;126.38 seconds
+[2025-08-24 07:08:24.503] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:08:24.511] got prompt
+[2025-08-24 07:08:25.466] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:10:29.450] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 07:10:29.451] Requested to load WanVAE
+[2025-08-24 07:10:30.678] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:10:30.858] ;Prompt executed in ;126.35 seconds
+[2025-08-24 07:10:34.209] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:10:34.215] got prompt
+[2025-08-24 07:10:35.345] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:12:39.211] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.19s/it]
+[2025-08-24 07:12:39.212] Requested to load WanVAE
+[2025-08-24 07:12:40.473] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:12:40.647] ;Prompt executed in ;126.43 seconds
+[2025-08-24 07:12:42.812] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:12:42.822] got prompt
+[2025-08-24 07:12:43.838] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:14:47.792] 100%|██████████| 20/20 [02:03<00:00,  6.18s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 07:14:47.794] Requested to load WanVAE
+[2025-08-24 07:14:48.987] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:14:49.163] ;Prompt executed in ;126.34 seconds
+[2025-08-24 07:15:16.314] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:15:16.320] got prompt
+[2025-08-24 07:15:17.491] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:17:21.472] 100%|██████████| 20/20 [02:03<00:00,  6.20s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 07:17:21.474] Requested to load WanVAE
+[2025-08-24 07:17:22.638] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:17:22.813] ;Prompt executed in ;126.49 seconds
+[2025-08-24 07:17:38.899] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:17:38.905] got prompt
+[2025-08-24 07:17:40.059] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:19:44.007] 100%|██████████| 20/20 [02:03<00:00,  6.19s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 07:19:44.009] Requested to load WanVAE
+[2025-08-24 07:19:45.145] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:19:45.315] ;Prompt executed in ;126.41 seconds
+[2025-08-24 07:19:47.510] comfyui-frontend-package not found in requirements.txt
+[2025-08-24 07:19:47.515] got prompt
+[2025-08-24 07:19:48.416] loaded partially 5589.674919891358 5582.980041503906 0
+[2025-08-24 07:21:52.384] 100%|██████████| 20/20 [02:03<00:00,  6.20s/it]100%|██████████| 20/20 [02:03<00:00,  6.20s/it]
+[2025-08-24 07:21:52.386] Requested to load WanVAE
+[2025-08-24 07:21:53.697] loaded completely 424.06640625 242.02829551696777 True
+[2025-08-24 07:21:53.873] ;Prompt executed in ;126.36 seconds
+[2025-08-24 07:21:55.706] comfyui-frontend-package not found in requirements.txt
