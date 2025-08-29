@@ -29,6 +29,11 @@ I have used the following setup for DDIM:
 
 For each image I gave it a score based on some on a set of subjective criteria designed to assess visual quality and consistency across different samplers. Each anomaly observed in the generated images deducted points from the total score, resulting in a binary scale (1 = acceptable, 0 = flawed). And for each image I recorded how much it took to generate them. Average normalized time means that I have eliminated the biggest 4 times from the series, that contained the loading of the model and / or parsing of the prompt for the first time. 
 
+You can find the raw data here: https://github.com/gctanita/understandingImageGeneration/blob/master/Samplers/DDIM/ddim-raw-data.md
+
+Scoring criteria for each series can be found here:
+
+
 Hardware the setup:
 - Graphic Card: NVIDIA GeForce RTX 4060 Ti with 8Gb VRAM 
 - CPU: AMD Ryzen 5 5500, 3.60 GHz

@@ -1,0 +1,125 @@
+# cat_and_parrot
+	- Prompt adherence	
+		- Parrot	
+			- breed: fischer
+			- color: blue
+			- stance: dancing
+			- position: on top of cat's head
+		- Butterfly	
+			- amount: exactly 4
+			- breed: monarch
+			- position: around the parrot
+		- Balls	
+			- amount: exactly 5
+			- position: in front of cat
+			- position: in puddle 
+			- pattern ball 1: planet
+			- pattern ball 2: planet
+			- pattern ball 3: planet
+			- pattern ball 4: planet
+			- pattern ball 5: planet
+	- Anomalies	
+		- Parrot	
+			- no extra leg
+			- NOT position of leg - unnatrural
+			- no missing/extra wing
+			- claws - anatomically correct
+			- anatomically correct (body, head)
+			- feet NOT merging into cat head
+		- Cat	
+			- anatomically correct
+			- fur looks good
+			- puddle not deep in relation with cat
+		- butterfly	
+			- b1: wings not clipped/malformed
+			- b2: wings not clipped/malformed
+			- b3: wings not clipped/malformed
+			- b4: wings not clipped/malformed
+		- balls	
+			- reflected in puddle
+	- Overall:	
+		- Feel	
+			- photorealistic
+		- Contrast	
+			- not too high
+		- Lighting	
+			- consistent light patterns
+			
+			
+# ballerina
+	- Prompt adherence	
+		- Ballerina	
+			- dancing pose
+			- located on stage
+			- full body visible
+		- Dress	
+			- made out of fire
+	- Anomalies	
+		- Hands	
+			- fingers not merged
+		- Feet	
+			- in a plausible position
+		- Slippers	
+			- corectly formed
+		- Face	
+			- anatomically correct
+		- Dress	
+			- no transparent material
+		- Stage elements	
+			- not on fire
+	- Overall:	
+		- Feel	
+			- photorealistic
+		- Contrast	
+			- not too high
+		- Lighting	
+			- consistent light patterns
+		- Shadows on stage	
+			- plausible
+		
+# ice_cat
+	- Prompt adherence	
+		- Cat 
+			- made of ice	body
+			- front paws
+			- head
+			- tail
+		- Ball	
+			- made of fire
+			- visible flames
+		- Cat	
+			- front paws well formed
+			- not marble -like body
+		- Ball	
+			- not marble - like
+		- Ice pattern	
+			- realistic
+	- Overall:	
+		- Feel	
+			- photorealistic
+		- Contrast	
+			- not too high
+		- Lighting	
+			- consistent light patterns
+		
+		
+# flower
+	- Prompt adherence	
+		- flower	
+			- plausible form and shape
+	- Anomalies	
+		- flower center	
+			- does not contain another flower/formation
+			- color not bleeding fron center
+		- petals	
+			- not clipped
+			- not merged
+			- plausible simetry
+			- petal shapes natural
+	- Overall:	
+		- Feel	
+			- photorealistic
+		- Contrast	
+			- not too high
+		- Lighting	
+			- consistent light patterns
