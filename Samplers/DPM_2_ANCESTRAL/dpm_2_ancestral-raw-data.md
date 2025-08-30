@@ -115,14 +115,14 @@
 # Flower																						
 |	Category	|	Element	|	Check item	|	9	|	9	|	6	|	6	|	9	|	5	|	8	|	7	|
 |	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|
-|	Prompt adherence	|	flower	|	plausible form and shape	|	249	|	250	|	251	|	252	|	253	|	254	|	255	|	256	|
-|	Anomalies	|	flower center	|	does not contain another flower/formation	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
-|	Anomalies	|	flower center	|	color not bleeding fron center	|	1	|	1	|	0	|	1	|	1	|	0	|	1	|	0	|
+|	Prompt adherence	|	flower	|	plausible form and shape	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
+|	Anomalies	|	flower center	|	does not contain another flower/formation	|	1	|	1	|	0	|	1	|	1	|	0	|	1	|	0	|
+|	Anomalies	|	flower center	|	color not bleeding fron center	|	1	|	1	|	1	|	0	|	1	|	0	|	1	|	1	|
 |	Anomalies	|	petals	|	not clipped	|	1	|	1	|	1	|	0	|	1	|	0	|	1	|	1	|
-|	Anomalies	|	petals	|	not merged	|	1	|	1	|	1	|	0	|	1	|	0	|	1	|	1	|
-|	Anomalies	|	petals	|	plausible simetry	|	1	|	1	|	0	|	0	|	0	|	0	|	0	|	0	|
-|	Anomalies	|	petals	|	petal shapes natural	|	1	|	1	|	0	|	1	|	1	|	1	|	1	|	1	|
-|	Overall	|	Feel	|	photorealistic	|	0	|	0	|	0	|	0	|	1	|	0	|	0	|	0	|
+|	Anomalies	|	petals	|	not merged	|	1	|	1	|	0	|	0	|	0	|	0	|	0	|	0	|
+|	Anomalies	|	petals	|	plausible simetry	|	1	|	1	|	0	|	1	|	1	|	1	|	1	|	1	|
+|	Anomalies	|	petals	|	petal shapes natural	|	0	|	0	|	0	|	0	|	1	|	0	|	0	|	0	|
+|	Overall	|	Feel	|	photorealistic	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
 |	Overall	|	Contrast	|	not too high	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
 |	Overall	|	Lighting	|	consistent light patterns	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
-|	-	|	-	|	TOTAL SCORE:	|	266	|	267	|	262	|	263	|	270	|	263	|	270	|	269	|
+|	-	|	-	|	TOTAL SCORE:	|	9	|	9	|	6	|	6	|	9	|	5	|	8	|	7	|

@@ -112,17 +112,17 @@
 |	-	|	-	|	TOTAL SCORE:	|	11	|	11	|	11	|	11	|	11	|	11	|	11	|	12	|	
 																							
 																							
-# Flower																							
-|	Category	|	Element	|	Check item	|	7	|	9	|	9	|	7	|	8	|	7	|	9	|	9	|	
-|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	
-|	Prompt adherence	|	flower	|	plausible form and shape	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	
-|	Anomalies	|	flower center	|	does not contain another flower/formation	|	1	|	1	|	0	|	1	|	1	|	1	|	0	|	1	|	
-|	Anomalies	|	flower center	|	color not bleeding fron center	|	0	|	0	|	1	|	0	|	1	|	0	|	1	|	1	|	
-|	Anomalies	|	petals	|	not clipped	|	0	|	1	|	1	|	0	|	0	|	0	|	1	|	0	|	
-|	Anomalies	|	petals	|	not merged	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	
-|	Anomalies	|	petals	|	plausible simetry	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	
-|	Anomalies	|	petals	|	petal shapes natural	|	0	|	1	|	1	|	0	|	0	|	0	|	1	|	1	|	
-|	Overall	|	Feel	|	photorealistic	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	
-|	Overall	|	Contrast	|	not too high	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	
-|	Overall	|	Lighting	|	consistent light patterns	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	
-|	-	|	-	|	TOTAL SCORE:	|	13	|	17	|	17	|	13	|	15	|	13	|	17	|	17	|	
+# Flower																						
+|	Category	|	Element	|	Check item	|	7	|	9	|	9	|	7	|	8	|	7	|	9	|	9	|
+|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|	------------	|
+|	Prompt adherence	|	flower	|	plausible form and shape	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
+|	Anomalies	|	flower center	|	does not contain another flower/formation	|	1	|	1	|	0	|	1	|	1	|	1	|	0	|	1	|
+|	Anomalies	|	flower center	|	color not bleeding fron center	|	0	|	0	|	1	|	0	|	1	|	0	|	1	|	1	|
+|	Anomalies	|	petals	|	not clipped	|	0	|	1	|	1	|	0	|	0	|	0	|	1	|	0	|
+|	Anomalies	|	petals	|	not merged	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
+|	Anomalies	|	petals	|	plausible simetry	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
+|	Anomalies	|	petals	|	petal shapes natural	|	0	|	1	|	1	|	0	|	0	|	0	|	1	|	1	|
+|	Overall	|	Feel	|	photorealistic	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
+|	Overall	|	Contrast	|	not too high	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
+|	Overall	|	Lighting	|	consistent light patterns	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|	1	|
+|	-	|	-	|	TOTAL SCORE:	|	7	|	9	|	9	|	7	|	8	|	7	|	9	|	9	|

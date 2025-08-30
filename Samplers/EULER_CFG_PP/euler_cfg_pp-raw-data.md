@@ -126,4 +126,4 @@
 |	Overall	|	Feel	|	photorealistic	|	0	|	1	|	0	|	1	|	1	|	1	|	1	|	1	|
 |	Overall	|	Contrast	|	not too high	|	0	|	1	|	0	|	1	|	1	|	1	|	0	|	1	|
 |	Overall	|	Lighting	|	consistent light patterns	|	0	|	1	|	1	|	1	|	1	|	1	|	0	|	1	|
-|	-	|	-	|	TOTAL SCORE:	|	4	|	9	|	5	|	13	|	15	|	11	|	12	|	9	|
+|	-	|	-	|	TOTAL SCORE:	|	2	|	5	|	3	|	7	|	8	|	6	|	6	|	5	|
