@@ -6,6 +6,29 @@ Average time: 	128.14	s / picture
 Average time normalized:	125.37	s / picture *
 
 
+Euler Ancestral is a stochastic version of the classic Euler sampler, widely used in diffusion image generation. It introduces random noise (ancestral sampling) during each denoising step, allowing for creative variability, natural texture, and high prompt sensitivity. It’s one of the most popular samplers for producing vibrant, expressive, and varied images, especially in artistic or fantasy prompts.
+
+
+About
+- It is not deterministic — different runs = different outputs
+- 20–30 steps is a sweet spot
+- High CFG sensitivity — can produce distortions at CFG > 10
+- Very fast (comparable to Euler)
+- best for fantasy, surreal art, stylized renders
+- not good for photorealism, consistency, exact inpainting
+
+
+✅ Pros
+- Great for artistic, dreamlike, or fantasy prompts
+- Creative variability — good for generating many versions
+- Fast and efficient
+- Often yields rich color and dramatic lighting
+
+⚠️ Cons
+- Not reproducible (unless you fix seed and settings — and even then, variation can occur)
+- Can introduce artifacts, melting, or warping at high CFG
+- Not ideal for photorealistic or technical prompts
+
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

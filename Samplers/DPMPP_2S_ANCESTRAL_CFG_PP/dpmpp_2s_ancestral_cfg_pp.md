@@ -5,8 +5,27 @@ Total score:	0	out of 552
 Average time: 	255.74	s / picture
 Average time normalized:	246.41	s / picture *
 
+DPM++ 2S Ancestral CFG PP is a high-performance, stochastic sampler from the DPM++ family that combines DPM++ 2S — a second-order, single-step solver (fast and accurate) with  Ancestral — adds randomness for natural variation and creativity and CFG PP — Classifier-Free Guidance Preconditioning, which improves stability and detail when using higher CFG values (e.g. 7–15). In short, this sampler should be Fast + Random + CFG-stable + High-detail + Creative-friendly
 
 
+About
+- Not deterministic — each generation will vary, even with the same seed
+- Best CFG range is 7–12 — performs very well with strong guidance
+- Steps recommended is 20–30 is optimal
+- Very fast (single-step solvers are quicker than multistep)
+- Noise schedule is compatible with Karras or other high-quality schedules
+
+✅ Pros
+- Stochastic — great for creative variation
+- CFG PP helps prevent overshooting, artifacts, or washed-out faces at high CFG
+- Good detail, sharpness, and natural lighting
+- Fast and responsive — ideal for iterative workflows or dynamic scenes
+- Great for portraits, concept art, stylized realism
+
+⚠️ Cons
+- Not reproducible (no guarantee of identical output on repeated runs)
+- Slightly more chaotic than deterministic samplers like 2M CFG PP
+- May introduce subtle noise in background if CFG is too low or high
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

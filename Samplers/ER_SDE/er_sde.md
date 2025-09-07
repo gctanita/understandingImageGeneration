@@ -5,8 +5,29 @@ Total score:	443	out of 552
 Average time: 	129.72	s / picture
 Average time normalized:	126.24	s / picture *
 
+ER_SDE stands for "Euler–Rauch Stochastic Differential Equation", and it is a stochastic sampler used in diffusion-based image generation. It blends ideas from Euler methods (common in basic samplers like Euler or Euler a), SDE (Stochastic Differential Equation)-based noise schedules and Likely enhanced or experimental formulations from the DPM++ or advanced scheduler families. In short: ER_SDE is an SDE-driven, noise-aware sampler that offers creative variation and smooth transitions, optimized for diverse, stable outputs.
 
 
+About
+- You’ll mostly find it in UIs like ComfyUI, Kohya_ss, InvokeAI, or cutting-edge builds of AUTOMATIC1111
+- Its exact implementation may vary between platforms
+- Documentation is limited, and it may evolve or change
+- 25–40 steps for most results
+- It is not deterministic — it is stochastic, so results vary with same seed
+- Best at smooth gradients, balanced structure
+- Generates stylized realism, portraits, painterly lighting, variable detail
+
+
+✅ Pros
+- Stochastic → encourages creative, diverse outputs
+- Smooth lighting, natural tone transitions
+- More exploratory than deterministic samplers
+- May avoid overfitting or oversharpening seen in some deterministic samplers
+
+⚠️ Cons
+- Not deterministic — difficult to exactly reproduce results
+- Less documentation — harder to tweak or benchmark
+- May not be ideal for high-fidelity photorealism (better suited for stylized or creative prompts)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

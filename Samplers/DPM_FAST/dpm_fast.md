@@ -5,7 +5,26 @@ Total score:	230	out of 552
 Average time: 	128.61	s / picture
 Average time normalized:	125.57	s / picture *
 
+DPM_FAST is a fast, simplified version of DPM (Denoising Probabilistic Models) samplers designed for quick image generation while still preserving decent quality. It's an experimental, speed-optimized sampler — ideal when you want quick previews or fast iteration, not necessarily the highest-fidelity output.
 
+Technical Summary
+- Goal: Reduce compute time by simplifying the sampling process.
+- Likely uses aggressive step sizes and simplified noise schedules.
+- Trades off some fine detail and stability in exchange for speed.
+- May be based on first-order ODE solvers with fewer refinements than DPM++ or adaptive samplers.
+
+Note: DPM_FAST is not a widely documented academic sampler — it's often specific to implementations like ComfyUI, InvokeAI, or custom forks of Stable Diffusion tooling.
+
+
+✅ Pros
+- Super fast generation
+- Great for low-resource setups (e.g. older GPUs, mobile inference)
+- Perfect for prompt prototyping or UI previews
+
+⚠️ Cons
+- Lower quality than DPM++, Euler, or Heun samplers
+- May introduce blurriness, lack of detail, or poor lighting
+- Not recommended for final renders or production-quality images
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

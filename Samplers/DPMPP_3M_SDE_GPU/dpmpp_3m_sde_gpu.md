@@ -6,7 +6,28 @@ Average time: 	130.21	s / picture
 Average time normalized:	126.56	s / picture *
 
 
+DPM++ 3M SDE GPU is the GPU-accelerated version of the DPM++ 3M SDE sampler — one of the highest-quality samplers in the diffusion family. It combines 3rd-order multistep precision (3M) with Stochastic Differential Equation noise schedule (SDE) and GPU optimization for significantly faster performance without sacrificing quality. This sampler is designed to produce ultra-detailed, photorealistic, and stable outputs — just like DPM++ 3M SDE, but much faster when run on a compatible GPU.
 
+
+About
+- it is deterministic
+- 30–50 steps needed for best detail, but great even at 25+ steps
+- recommended scheduler is Karras (for smooth transitions and lighting)
+- much faster than regular DPM++ 3M SDE (thanks to fused CUDA ops)
+- generates high-end photorealism, cinematic lighting, realistic anatomy/portraits
+
+
+✅ Pros
+- Highest image fidelity with smooth transitions and rich texture
+- Much faster than the non-GPU version — up to 2× or more
+- Deterministic — excellent for reproducible results
+- Great for portraits, product renders, landscapes, glass/reflections
+- Excels in subtle gradients, realistic lighting, and high-contrast scenes
+
+⚠️ Cons
+- Still slower than Euler a or DPM++ 2S a in absolute terms (but higher quality)
+- May be overkill for stylized or cartoonish prompts
+- Needs a compatible GPU and backend to fully benefit (e.g., CUDA ≥11, torch.compile, etc.)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

@@ -6,7 +6,27 @@ Average time: 	253.51	s / picture
 Average time normalized:	248.81	s / picture *
 
 
+DPM++ SDE is a modern, SDE-based sampler from the DPM++ family, designed to deliver smooth, detailed, and stable image generation by leveraging a stochastic differential equation (SDE) noise schedule — without being tied to a specific solver order (like 2M, 2S, or 3M). It serves as a baseline SDE sampler in many UI toolkits such as ComfyUI, AUTOMATIC1111, etc.
 
+
+About
+- it is deterministic
+- recomended scheduler is SDE-based (adds robustness and gradient smoothness)
+- 20–30 steps for good balance, 40+ for maximum quality
+- compatible with epsilon, v, or score noise prediction models
+
+
+✅ Pros
+- Natural transitions and lighting, especially good with SDE noise modeling
+- Deterministic — reproducible results
+- Good for portraits, environments, and soft-glow lighting
+- Useful for inpainting, refinement, or clean renders
+- Balanced output even with medium CFG values (6–10)
+
+⚠️ Cons
+- Less refined than specific samplers like DPM++ 2M SDE or 3M SDE
+- May not exploit solver-specific optimizations (slightly lower fidelity)
+- Not ideal for super stylized prompts or high randomness scenarios
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

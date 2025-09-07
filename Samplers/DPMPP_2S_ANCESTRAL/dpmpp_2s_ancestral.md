@@ -6,8 +6,28 @@ Average time: 	247.34	s / picture
 Average time normalized:	243.43	s / picture *
 
 
+DPM++ 2S Ancestral is a second-order, single-step, stochastic sampler from the DPM++ family, designed to combine high-quality generation with increased diversity and creativity in the outputs. It’s one of the best options when you want natural randomness, variation between generations, and still maintain clean, sharp results.
 
 
+About
+- 20-30 steps usually gives good results
+- not deterministic - same seed and prompt might give slightly different results
+- faster than multistep samplers (2M, 3M)
+- compatible with schedulers like Karras for optimal results
+- output is varied, natural, slightly “noisy” in a good way
+
+
+✅ Pros
+- Stochastic — good for generating variations
+- Higher accuracy than basic Euler a
+- Produces crisp, detailed, and vibrant images
+- Excellent for artistic prompts, portraits, environments
+- Fast and efficient for high-quality outputs
+
+⚠️ Cons
+- Not deterministic — harder to reproduce exactly the same image
+- May introduce subtle inconsistencies in fine detail (especially in upscaling workflows)
+- Slightly less predictable than 2M or 2M CFG PP samplers
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

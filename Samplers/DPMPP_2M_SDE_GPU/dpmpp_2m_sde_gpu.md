@@ -6,8 +6,27 @@ Average time: 	133.73	s / picture
 Average time normalized:	126.52	s / picture *
 
 
+DPM++ 2M SDE GPU is a GPU-optimized version of the DPM++ 2M SDE sampler — one of the most high-quality, deterministic, and noise-aware samplers available in diffusion-based image generation.
 
 
+Key Features
+- 2nd-order multistep with SDE noise schedule
+- Deterministic — consistent output with same seed/settings
+- Noise Schedule SDE — handles soft gradients, contrast, and fine textures well
+- GPU Optimization — it is designed to run faster using CUDA or low-level kernels
+- Output Quality — extremely high for realism, portraits, subtle scenes
+
+
+✅ Pros
+- Faster than the regular DPM++ 2M SDE due to GPU acceleration
+- Very high-quality images — especially good with realistic lighting, skin, landscapes
+- Deterministic, great for batch workflows or rerendering the same image
+- Handles subtle tone, gradients, and details better than older samplers
+
+⚠️ Cons
+- Slightly slower than fast samplers like Euler or DDIM (but much better quality)
+- Only available in certain implementations (e.g. ComfyUI, A1111 with GPU optimizations)
+- Might require specific conditions (e.g. torch.compile, CUDA 11+, etc.)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

@@ -6,10 +6,27 @@ Average time: 	129.68	s / picture
 Average time normalized:	126.50	s / picture *
 
 
+DPM++ 2M SDE is a high-quality, deterministic, and noise-aware sampler from the DPM++ family, specifically optimized to work with SDE (Stochastic Differential Equation)-based noise schedules. It blends the advantages of DPM++ 2M: a 2nd-order, multistep, deterministic sampler and SDE: a stochastic noise schedule that enhances robustness and sample diversity resulting in crisp, stable, realistic images, even in challenging prompts or low-step configurations
 
 
+About
+- Typically 20–40 necessary for clean results
+- It is deterministic (no randomness, same seed = same output)
+- Works with epsilon, v, or score prediction models
+- Typically uses Karras or Exponential noise schedule
+- Best for clean realism, subtle lighting, photorealistic skin/eyes, sharp textures
 
+✅ Pros
+- Deterministic, great for reproducibility
+- High-quality results at lower steps
+- Handles subtle gradients, lighting, and contrast very well
+- Good with photorealistic, natural, and sharp scenes
+- Works very well with CFG preconditioning, ControlNet, and upscaling workflows
 
+⚠️ Cons
+- Slightly slower than DDIM or Euler
+- Can appear too clean or "safe" in highly creative/artistic prompts
+- Requires SDE-compatible noise schedulers for best results
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

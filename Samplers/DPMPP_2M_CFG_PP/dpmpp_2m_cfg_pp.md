@@ -6,9 +6,27 @@ Average time: 	133.14	s / picture
 Average time normalized:	128.10	s / picture *
 
 
+DPM++ 2M CFG PP is an advanced, high-quality, deterministic sampler that combines: DPM++ 2M — a second-order multistep sampler, already known for its clean, stable, high-detail outputs and CFG Preconditioning (PP) — an optimization technique that enhances classifier-free guidance (CFG) to make the denoising more stable, consistent, and detailed, especially under high CFG values (e.g. 7–12)
 
 
+What Makes DPM++ 2M CFG PP Special?
+- It stabilizes guidance, especially at high CFG scales (e.g. 10–15)
+- Reduces artifacts or overexposed areas that often appear with regular samplers at high CFG
+- Makes the image generation process more robust and consistent, especially when strong prompt emphasis is desired
+- it is deterministic
 
+
+✅ Pros
+- Repeatable results
+- Sharper and more stable than regular DPM++ samplers at high CFG
+- Handles strong guidance (CFG) without falling apart
+- Balanced between quality and speed
+- Great for photorealism, portraits, inpainting, and control-based workflows
+
+⚠️ Cons
+- Slightly slower than ultra-fast samplers like Euler or DDIM
+- May look too “clean” or “safe” for stylized or abstract prompts
+- Needs a compatible scheduler (Karras is often best)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:
