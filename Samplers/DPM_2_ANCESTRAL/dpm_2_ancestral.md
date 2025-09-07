@@ -40,7 +40,7 @@ How it Works
 
 
 You can find the raw data here: 
-- https://github.com/gctanita/understandingImageGeneration/blob/master/Samplers/DPM_2/dpm_2-raw-data.md
+- https://github.com/gctanita/understandingImageGeneration/blob/master/Samplers/DPM_2_ANCESTRAL/dpm_2_ancestral-raw-data.md
 
 
 Scoring criteria for each series can be found here:
