@@ -5,7 +5,27 @@ Total score:	422	out of 552
 Average time: 	138.18	s / picture
 Average time normalized:	126.21	s / picture *
 
+SA_SOLVER stands for Stochastic Analytic Solver, a relatively new and experimental sampling method designed to accelerate diffusion while maintaining image quality. It is stochastic (it introduces randomness like ancestral samplers), analytic (it leverages exact mathematical approximations for the diffusion process) and solver (it uses numerical techniques to solve the reverse diffusion ODE/SDE equations). In essence SA_SOLVER is a fast sampler that aims to balance speed, randomness, and detail. It can work well in low-step setups and generate diverse but structurally accurate outputs.
 
+
+About: 
+- it is not deterministic
+- 12–30 recommended steps (often works well even at 15–20 steps)
+- fast
+- output usually has good structure, creative textures, minimal artifacts
+- recommended for artistic scenes, character portraits, dynamic lighting
+
+
+✅ Pros
+- Fast generation with good quality
+- Expressive results due to stochasticity
+- Handles complex prompts well (e.g., glowing effects, fire, magic, etc.)
+- Compatible with modern schedulers (karras, exponential)
+
+⚠️ Cons
+- Not deterministic — results vary even with same seed
+- Still experimental — not as consistent as DPM++ or RES_MULTISTEP
+- Not great for ultra-low-step (e.g., 4-step) generation — better than Euler but not LCM-level
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

@@ -6,6 +6,28 @@ Average time: 	132.52	s / picture
 Average time normalized:	125.94	s / picture *
 
 
+RES_MULTISTEP_CFG_PP is a deterministic, high-accuracy sampler that combines residual prediction (to refine noise estimates), multistep solvers (for better denoising accuracy) and CFG_PP = Classifier-Free Guidance with Prompt Preconditioning (for stability at high guidance values).
+
+
+About:
+- it is deterministic 
+- 20–30 recommended steps (25+ yields better fidelity)
+- clean lines, good structure, balanced lighting
+- slower than Euler, faster than DPM++ 3M
+- recommended for realism, character design, clean fantasy, editorial-style renders
+
+
+✅ Pros
+- Excellent stability at high CFG (8–14)
+- Great structure preservation (faces, hands, objects)
+- Minimal noise or over-sharpening
+- Fully deterministic — same output from same prompt + seed
+- Compatible with modern schedulers (karras, exponential, etc.)
+
+⚠️ Cons
+- Less creative variety than ancestral or LCM-based samplers
+- Not ideal for chaotic, expressive styles (use *_ancestral or LCM instead)
+- Slightly slower than first-order methods (e.g., Euler)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

@@ -6,6 +6,29 @@ Average time: 	132.44	s / picture
 Average time normalized:	127.46	s / picture *
 
 
+RES_MULTISTEP stands for Residual Multistep Sampler, an experimental and high-efficiency sampler that combines ideas from Multistep solvers (like DPM++) with residual estimation — refining predictions by using leftover (residual) error information. It aims to achieve faster sampling and better output quality with fewer steps by using previous step information to predict the next noise state more accurately.
+
+
+About:
+- multistep residual-enhanced ODE sampler
+- it is deterministic
+- 15–30 steps recommended
+- slightly slower than Euler, faster than DPM++ 3M
+- output quality is on par with DPM++ 2M, sharper than DDIM/LMS
+- best for balanced photorealism + speed; portraits; fantasy scenes
+
+
+✅ Pros
+- Sharper output than DDIM or Euler at same step count
+- Reduces artifacts caused by accumulated noise
+- Good at structure preservation (eyes, faces, hands)
+- Works well even with moderate CFG (7–10)
+- More efficient than DPM++ 3M or ancestral samplers
+
+⚠️ Cons
+- Still experimental — may not be in every UI or stable release
+- Slightly slower than Euler or Heun
+- Less tested in very low (4–8) step ranges compared to LCM
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

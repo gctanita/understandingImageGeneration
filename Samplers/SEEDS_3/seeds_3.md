@@ -6,6 +6,19 @@ Average time: 	369.14	s / picture
 Average time normalized:	360.73	s / picture *
 
 
+Like SEEDS_2, the SEEDS_3 sampler is not part of the official Stable Diffusion or Hugging Face Diffusers library. It appears to be an experimental or custom sampler found in advanced tools like ComfyUI, InvokeAI, or internal forks.
+Most likely, SEEDS_3 is part of a "multi-seed sampling framework", where the model:
+- Generates an image using three seeds in parallel
+- Blends or interpolates their latent noise representations
+- Produces a hybrid image with properties from all three seed variants
+
+
+About:
+- it is not deterministic
+- creative variation is very high
+- best used for prompt fusion, seed morphing, ideation
+- recommended steps 20–30 likely optimal
+- CFG range likely works best at 6–12
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

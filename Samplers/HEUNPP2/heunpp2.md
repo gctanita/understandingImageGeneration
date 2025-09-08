@@ -5,9 +5,29 @@ Total score:	445	out of 552
 Average time: 	356.50	s / picture
 Average time normalized:	353.26	s / picture *
 
+HeunPP2 is an advanced, second-order deterministic sampler used in image generation with diffusion models. It is an improved version of the classic Heun sampler, part of the DPM++ sampler family, and is designed to be faster and more accurate by combining the Heun method (a 2nd-order ODE solver) with DPM++ enhancements for stability and better denoising behavior and preconditioning techniques (likely the “PP2” part) to improve guidance accuracy and reduce artifacts. Think of HeunPP2 as “Heun++, optimized for modern diffusion models” — better prompt fidelity, smoother gradients, and less distortion.
 
 
+About:
+- 2nd-order ODE with prompt preconditioning
+- It is deterministic
+- 20-40 steps recommended
+- Fast — similar to Heun, slightly slower than Euler
+- CFG stability is very good — less distortion at high values (10–15)
+- Supports epsilon, v, or score-based models for noise prediction
 
+
+✅ Pros
+- Better accuracy than standard Heun or Euler
+- Produces stable lighting, shading, and detail
+- Repeatable — deterministic behavior
+- Handles complex prompts better (faces, hands, lighting)
+- Compatible with modern schedulers like Karras, Exponential, etc.
+
+⚠️ Cons
+- Slightly slower than Euler or DDIM
+- May still lack ultra-high fidelity of samplers like DPM++ 3M SDE
+- Not stochastic — not suitable if you want creative variation across generations
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

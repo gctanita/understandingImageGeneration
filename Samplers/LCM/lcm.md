@@ -5,7 +5,27 @@ Total score:	416	out of 552
 Average time: 	130.56	s / picture
 Average time normalized:	126.63	s / picture *
 
+LCM stands for Latent Consistency Model — a new generation of samplers that aim to drastically reduce the number of steps needed to generate high-quality images. Unlike traditional samplers (like Euler, DDIM, or DPM++), LCM is not just a sampling method — it's an entirely different architecture and training paradigm. In short: LCM is a sampler + model training strategy that enables high-quality images in as few as 2–8 steps.
 
+
+About:
+- You must use an LCM-trained model (e.g., LCM-LoRA or LCM-SDXL)
+- As low as 2–8 steps
+- It is deterministic
+- Extremely fast
+- Compatible UIs: ComfyUI, AUTOMATIC1111 (with LCM support), Fooocus, etc.
+
+✅ Pros
+- Insanely fast generation (1–2 seconds for full image on GPU)
+- High quality even at 4 steps
+- Works well with ControlNet, LoRA, and other conditioning tools
+- Deterministic — reproducible outputs
+- Ideal for real-time applications, mobile UIs, or interactive generation
+
+⚠️ Cons
+- Requires LCM-compatible model (can’t use standard SD 1.5 or SDXL alone)
+- Can sometimes produce softer images or minor artifacts at very low steps
+- Not as flexible for fine-tuning small details compared to 30–50-step samplers
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

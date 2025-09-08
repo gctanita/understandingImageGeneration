@@ -5,10 +5,38 @@ Total score:	146	out of 552
 Average time: 	130.40	s / picture
 Average time normalized:	126.01	s / picture *
 
+RES_MULTISTEP_ANCESTRAL is an experimental image generation sampler that blends multistep solvers (for accuracy and stability) with residual correction (to reduce denoising errors) and ancestral sampling (adds controlled noise at each step for creative variation).
+
+This sampler is built on 3 core ideas:
+- Multistep method — Uses previous step data to more accurately predict future noise states (like DPM++)
+- Residual estimation — Corrects predictions using the "leftover error" from previous steps
+- Ancestral sampling — Reintroduces controlled randomness (noise) at each step, allowing for more varied, organic, and less deterministic results
+
+This combination makes it:
+- More expressive than purely deterministic samplers
+- More stable than raw ancestral samplers like Euler a
+- Suitable for creative, dynamic, and complex prompts
 
 
+About:
+- not deterministic due to ancestral randomness
+- 20-30 steps recommended (for good texture recommended 24+)
+- speed is moderate, faster than DPM++ 3M SDE
+- output is detailed, expressive, organic textures
+- variation is high — even with same prompt and seed
+- recommended for creative scenes, fantasy art, portraits with natural imperfections
 
 
+✅ Pros
+- Creative, less rigid outputs than deterministic samplers
+- Refined details due to residual correction
+- Excellent for faces, nature, fantasy, and emotional scenes
+- Multistep noise evolution improves color transitions and shading
+
+⚠️ Cons
+- Not reproducible — small changes = different image (due to noise injection)
+- Slower than Euler, slightly slower than res_multistep
+- May need fine-tuning CFG and steps for best results
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

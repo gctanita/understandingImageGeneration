@@ -6,6 +6,29 @@ Average time: 	128.45	s / picture
 Average time normalized:	125.53	s / picture *
 
 
+LMS stands for Laplacian Pyramid Multiscale Sampler — but in the context of diffusion models (like Stable Diffusion), it usually refers to the Linear Multistep Sampler, which is a deterministic, ODE-based sampling algorithm designed to produce images faster and with higher quality than early samplers like DDPM or Euler. LMS is a deterministic, fast, and relatively old sampler. It has largely been replaced in modern workflows by improved variants like DPM++ 2M or Heun, but it is still available in many UIs like AUTOMATIC1111, InvokeAI, and ComfyUI.
+
+
+About:
+- it is deterministic
+- 20-40 steps recommended (less effective at very low steps)
+- fast
+- quality is moderate - better than Euler, worse than DPM++
+- good for general-porpouse generation with stable output
+
+
+✅ Pros
+- Fast and deterministic
+- Cleaner results than Euler or DDIM at the same step count
+- Good for older Stable Diffusion 1.4 / 1.5 models
+- Great for batch generation or reproducible pipelines
+
+
+⚠️ Cons
+- Lower fidelity than modern samplers like DPM++ 2M or 3M SDE
+- Can be unstable at high CFG values
+- Not optimal for realistic lighting or subtle textures
+- Rarely used in new workflows (often replaced by DPM++)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

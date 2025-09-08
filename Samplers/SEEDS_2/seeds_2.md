@@ -6,6 +6,22 @@ Average time: 	247.58	s / picture
 Average time normalized:	242.78	s / picture *
 
 
+SEEDS_2 is not a widely standardized sampler like Euler, DPM++, or DDIM. Instead, it appears to be a custom, experimental, or implementation-specific sampler, likely introduced in specialized tools such as ComfyUI, Kohya, or internal forks of Stable Diffusion. From naming conventions and community analysis, SEEDS_2 is most likely: a multi-seed variation sampler — designed to blend or interpolate outputs from multiple seeds in a structured way.
+
+
+About:
+- it is not deterministic
+- Likely works across standard 20–30 step ranges
+- CFG range between 6–10 (if based on standard diffusion)
+- output is expressive, but may vary more wildly than traditional samplers
+- best used for creative experiments, seed morphing, variation exploration
+
+
+⚠️ Limitations
+- Not part of official Stable Diffusion or Diffusers library
+- May only work in specific UIs (like ComfyUI with custom nodes)
+- Lacks academic documentation or peer-reviewed validation
+- Behavior might change across implementations or updates
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

@@ -6,7 +6,29 @@ Average time: 	129.35	s / picture
 Average time normalized:	125.84	s / picture *
 
 
+IPNDM stands for "Implicit Predictive Noise Diffusion Model" — an experimental sampler used in diffusion-based image generation. It’s designed to approximate denoising trajectories more efficiently by focusing on the noise prediction process, rather than simulating the entire diffusion path in traditional steps.
 
+
+About:
+- It is deterministic
+- 10-30 steps recommended
+- Fast — designed for reduced computation
+- Quality currently decent but not photorealistic
+- Broad strokes, strong shapes, but lower texture fidelity
+- Usually supports epsilon, v, or score predictions
+
+
+✅ Pros
+- Very fast — can work with fewer steps
+- Designed for efficient noise prediction
+- Deterministic
+- Great for preview generation or mobile/low-power environments
+
+⚠️ Cons
+- Still experimental — not production-quality in many setups
+- May lack fine detail, especially in hands, faces, or soft textures
+- Not ideal for photorealism or high-precision tasks
+- Limited documentation — implementation may vary by UI
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

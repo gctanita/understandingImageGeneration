@@ -5,7 +5,27 @@ Total score:	0	out of 552
 Average time: 	130.63	s / picture
 Average time normalized:	126.44	s / picture *
 
+GRADIENT_ESTIMATION_CFG_PP is an experimental, GPU-accelerated sampler that combines Gradient Estimation — a fast, non-traditional sampling method that approximates denoising gradients rather than simulating full reverse diffusion steps with CFG — Classifier-Free Guidance, to steer the image generation toward your prompt and CFG PP — Preconditioned Guidance, which improves stability and fidelity when using high CFG values (e.g., 8–15+). In short gradient_estimation_cfg_pp = fast + guided + stable + experimental. It is typically found in ComfyUI or custom forks of generation frameworks (e.g., diffusion toolkits with experimental samplers enabled).=0
 
+
+About:
+- usually it is deterministic
+- 10-25 steps recomended 
+- speed - very fast (especially on GPU)
+- quality - may lack fine texture or realism, but stable
+- supports high CFG (10–15) without major quality drop
+
+
+✅ Pros
+- Extremely fast sampler — excellent for previews, real-time applications, or mobile/gen AI UI tools
+- CFG PP makes it stable even at high prompt guidance values
+- Good prompt alignment, especially for simple, high-level prompts
+- Deterministic, so good for consistent results across runs
+
+⚠️ Cons
+- Still experimental — behavior may vary across versions/backends
+- May generate blurry or undersaturated images compared to DPM++ samplers
+- Not ideal for high-end photorealism or detailed anatomy (hands, faces, etc.)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

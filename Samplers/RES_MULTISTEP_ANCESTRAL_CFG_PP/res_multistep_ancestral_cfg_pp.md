@@ -6,6 +6,29 @@ Average time: 	131.36	s / picture
 Average time normalized:	126.10	s / picture *
 
 
+RES_MULTISTEP_ANCESTRAL_CFG_PP is a highly advanced, hybrid sampler that merges multistep sampling (accurate and stable denoising using previous steps) with ancestral noise injection (adds creative variability and texture), residual correction (reduces accumulated error during generation) and Classifier-Free Guidance + Prompt Preconditioning (CFG_PP) — improves precision and detail retention under high CFG.
+
+
+About:
+- not deterministic - due to ancestral noise injection
+- 20-30 steps recommended
+- moderate speed (slower than Euler, faster than DPM++ 3M)
+- output quality very high with rich gradients, accurate details, and creative flare
+- works well even at CFG 10–14
+- recommended for artistic portraits, fantasy scenes, concept art, soft realism
+
+
+✅ Pros
+- Super detailed, even under high CFG
+- Great color dynamics, lighting, and texture variety
+- Reduced artifacting from CFG or noise prediction
+- Creative yet accurate → best of both worlds
+- Amazing for portraits, fantasy, atmospheric scenes
+
+⚠️ Cons
+- Not deterministic — slight changes = different results
+- Slightly slower than simpler samplers (like Euler or DDIM)
+- Not ideal for scientific, exact, or photoreal renderings that require pixel-consistent results
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

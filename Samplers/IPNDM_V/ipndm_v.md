@@ -5,7 +5,27 @@ Total score:	275	out of 552
 Average time: 	133.81	s / picture
 Average time normalized:	126.83	s / picture *
 
+IPNDM_V stands for Implicit Predictive Noise Diffusion Model – V-prediction, and it is a variant of the IPNDM sampler that specifically uses the "v-prediction" noise format, which is one of the internal ways modern diffusion models (like Stable Diffusion v2+) represent denoising steps. It is experimental, fast, designed for models trained with v-prediction (instead of epsilon- or score-prediction) and used in ComfyUI, Kohya_ss, and other advanced frameworks.
 
+
+About:
+- It is deterministic
+- 10-30 steps recommended
+- Very fast
+- Output quality is reasonable, but not ultra-detailed
+- Best for previews, fast renders, mobile diffusion apps
+
+
+✅ Pros
+- Extremely fast
+- Tailored for v-prediction models
+- Deterministic
+- Good for previewing prompts, concept iteration, or low-power devices
+
+⚠️ Cons
+- Not suitable for realism or detailed anatomy (faces, hands, etc.)
+- Slightly less detailed than ipndm with epsilon-prediction
+- Limited to v-prediction models (won’t work with older SD1.5-based pipelines)
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:

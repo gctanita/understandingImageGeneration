@@ -6,7 +6,25 @@ Average time: 	129.90	s / picture
 Average time normalized:	125.87	s / picture *
 
 
+GRADIENT_ESTIMATION is an experimental sampler in the diffusion ecosystem, likely designed to approximate gradients of the noise function more directly — potentially to speed up sampling or improve numerical stability during image generation. It’s not part of the traditional sampler families (like Euler, DPM++, or DDIM), and as of now, there is limited public documentation on it. It typically appears in ComfyUI, custom builds, or developer test branches, often for research or advanced use.
 
+
+About:
+- Probably deterministic (dependcs on implementation)
+- Faster than multistep DPM samplers (theoretical)
+- Output quality varies and may lack fine texture or lighting stability
+- Good for testing, research, or rough preview generation
+
+
+✅ Pros
+- Fast generation, fewer steps required
+- Interesting behavior for prompt variation or testing
+- Could be used for score matching, faster latent traversal, or interactive use cases
+
+⚠️ Cons
+- Not well-documented — implementation-dependent
+- May suffer from lack of sharpness, washed-out textures, or mode collapse
+- Could behave unpredictably at high CFG values or low steps
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:
 - 4 prompts (you can find them here: https://github.com/gctanita/understandingImageGeneration/blob/master/experimentPrompts.md )

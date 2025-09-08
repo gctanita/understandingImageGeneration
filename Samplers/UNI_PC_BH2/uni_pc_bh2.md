@@ -6,9 +6,28 @@ Average time: 	130.44	s / picture
 Average time normalized:	125.90	s / picture *
 
 
+UNI_PC_BH2 is a variant of the UNI_PC (Unified Predictor-Corrector) sampler — designed for faster and more stable diffusion sampling. The BH2 part stands for a second-order B(h) method, which is a specific numerical solver technique that improves accuracy while keeping computations efficient.
 
 
+About:
+- it is deterministic
+- very fast, especially in low step setups
+- steps recommended 8-20
+- output is smoother than UNI_PC, better structure retention
+- creative variation is low to medium (fidelity-focused)
+- best used on mobile apps, fast pipelines, real-time previews, low-latency rendering
 
+
+✅ Pros
+- Improved precision over plain UNI_PC (less noise, better edges)
+- Works well in low-step settings (8–12 steps)
+- Good CFG stability up to ~12
+- Fast, clean, consistent results
+
+⚠️ Cons
+- Less expressive than stochastic samplers like Euler a or SA_SOLVER
+- Slightly more memory-intensive than UNI_PC due to extra computations
+- Not ideal for artistic chaos or morphing
 
 
 𝙋𝙞𝙘𝙩𝙪𝙧𝙚 𝙜𝙚𝙣𝙚𝙧𝙖𝙩𝙞𝙤𝙣 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:
