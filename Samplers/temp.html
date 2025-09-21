@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>My HTML document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">{{ $json.result[0].sampler }} - Recommended steps: {{ $json.result[0].rec_steps }}</div>
+        <div class="subtitle">Sampler is usually best for: {{ $json.result[0].best_for }}</div>
+        <br/>
+        <br/>
+        <table>
+            <tr>
+                <td>
+                    <div class="imp">Steps: {{ $json.result[0].steps }}</div>
+                    <div class="picName">{{ $json.result[0].picture }}</div>
+                </td>
+                <td>
+                    <div class="imp">Steps: {{ $json.result[1].steps }}</div>
+                    <div class="picName">{{ $json.result[1].picture }}</div>
+                </td>
+                <td>
+                    <div class="imp">Steps: {{ $json.result[2].steps }}</div>
+                    <div class="picName">{{ $json.result[2].picture }}</div>
+                </td>
+                <td>
+                    <div class="imp">Steps: {{ $json.result[3].steps }}</div>
+                    <div class="picName">{{ $json.result[3].picture }}</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src = "C:\comfyUi\output\{{ $json.result[0].picture }}" width="400px">
+                </td>
+                <td>
+                    <img src = "C:\comfyUi\output\{{ $json.result[1].picture }}" width="400px">
+                </td>
+                <td>
+                    <img src = "C:\comfyUi\output\{{ $json.result[2].picture }}" width="400px">
+                </td>
+                <td>
+                    <img src = "C:\comfyUi\output\{{ $json.result[3].picture }}" width="400px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src = "C:\comfyUi\output\{{ $json.result[4].picture }}" width="400px">
+                </td>
+                <td>
+                    <img src = "C:\comfyUi\output\{{ $json.result[5].picture }}" width="400px">
+                </td>
+                <td>
+                    <img src = "C:\comfyUi\output\{{ $json.result[6].picture }}" width="400px">
+                </td>
+                <td>
+                    <img src = "C:\comfyUi\output\{{ $json.result[7].picture }}"  width="400px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="imp">Steps: {{ $json.result[4].steps }}</div>
+                    <div class="picName">{{ $json.result[4].picture }}</div>
+                </td>
+                <td>
+                    <div class="imp">Steps: {{ $json.result[5].steps }}</div>
+                    <div class="picName">{{ $json.result[5].picture }}</div>
+                </td>
+                <td>
+                    <div class="imp">Steps: {{ $json.result[6].steps }}</div>
+                    <div class="picName">{{ $json.result[6].picture }}</div>
+                </td>
+                <td>
+                    <div class="imp">Steps: {{ $json.result[7].steps }}</div>
+                    <div class="picName">{{ $json.result[7].picture }}</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+<style>
+.container {
+  background-color: #ffffff;
+  text-align: center;
+  width:1700px;
+  padding: 16px;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.title {
+  color: #000000;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+.subtitle {
+  color: #000000;
+  font-size: 28px;
+  text-align: center;
+}
+.picName {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.imp {
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+</style>

@@ -4,6 +4,8 @@ First of all a couple of words about the table. Due to big quantity of data, I t
 
 The scoring of the pictures was done using the criteria discribed here: https://github.com/gctanita/understandingImageGeneration/blob/master/Samplers/scoring_criteria.md for each picture. I tried to have consistency over the scoring, however since it is subjective and had to be done over a bigger spawn of time (because there were a lot of pictures to be graded - 1280 pictures to be more exact), let's just say my inner QA is not that happy, however I still believe that even with this variance in the data, it can still give us some insights. We have 2 areas that we can analyze here: Score and Time.
 
+Also, reminder, all this is in relation with Qwen Image VLM. I don't know for sure, but having different VLMs could have an impact on these findings. I am still in experimental stage. 
+
 ## SCORE in relation to Steps
 ### Score 0
 I am going to highlight here the outliers. First of all we have those that scored 0 - basically they produced noise. Our candidates are:
@@ -38,37 +40,67 @@ So:
 - the main outlier here is DPM_FAST that should have performed quite well, given the fact that 20 is within the upper part of the iterval
 - for DPM_ADAPTIVE and IPNDM_V 20 steps is in the interval even if it is the lower part of it, would have expected better
 - LMS - ok, fair enough, it's probably would have needed more steps, but still reaching a score of almost 60% I'd say it's decent
-
+l
 
 ### Score 60% to 80%
 In this interval there are 21 samplers, so I will only take the outliers here, instead of going through all of them:
 
-- First on my list is LCM
+- First on my list is LCM, having a score of 75.36% but having the step interval 4-12. For this I am curious to see what it will do with fewer steps. 
+- In a similar situation is UNI_PC_BH2, with a slighly bigger score of 76.81% and UNI_PC with 79.89%, however the 20 steps were in the recomended interval. 
+- Honorable mentions, with recommended teps of over 20, but managed to score in the 60-80% interval were DPMPP_3M_SDE and DPMPP_3M_SDE_GPU (30-60 steps), DPM_2_ANCESTRAL and DPMPP_2S_ANCESTRAL (25–50 steps),SEEDS_2 (25–45 steps)
+- The rest of them had the recommended steps interval starting with 20: EULER_CFG_PP, EULER_ANCESTRAL_CFG_PP, SA_SOLVER, DPMPP_SDE, EULER_ANCESTRAL, HEUN, DPMPP_SDE_GPU, RES_MULTISTEP, IPNDM, DPMPP_2M, DPMPP_2M_SDE_GPU, DPMPP_2M_SDE
 
 
+### Score 80% to 100% 
+Actually the interval is 80% - 82%, with the biggest score at 81.88% scored by the EULER sampler. The surprise of the bunch however was GRADIENT_ESTIMATION, that had a 50-100 recommended steps, and managed to score 81.34% (the second best score). 
 
-EULER_CFG_PP
-EULER_ANCESTRAL_CFG_PP
-DPMPP_3M_SDE
-DPMPP_3M_SDE_GPU
-LCM
-SA_SOLVER
-UNI_PC_BH2
-DPM_2_ANCESTRAL
-DPMPP_SDE
-EULER_ANCESTRAL
-HEUN
-DPMPP_SDE_GPU
-RES_MULTISTEP
-DPMPP_2S_ANCESTRAL
-IPNDM
-SEEDS_2
-DPMPP_2M
-DPMPP_2M_SDE_GPU
-DEIS
-DPMPP_2M_SDE
-UNI_PC
+- ER_SDE	=> steps: 20–40	 => score: 80.25%
+- SEEDS_3	=> steps: 25–45	 => score: 80.25%
+- HEUNPP2	=> steps: 20–40	 => score: 80.62%
+- SA_SOLVER_PECE	=> steps: 20–35	 => score: 80.62%
+- DDIM	=> steps: 25–50	 => score: 81.34%
+- DPM_2	=> steps: 20–50	 => score: 81.34%
+- GRADIENT_ESTIMATION	=> steps: 50–100	 => score: 81.34%
+- EULER	=> steps: 20–40	 => score: 81.88%
 
+Since the scoring did have some subjectiveness over them, and the criteria might not have been the best, i do think that when using the Qwen Image VLM, combining with any of the samplers that scored more than 80% on the experimental runs done, will yeld satisfactory results. 
+
+
+## TIME 
+
+On my setup, the top 3 from speed point of view were:
+- EULER_ANCESTRAL_CFG_PP - 127.78
+- EULER_CFG_PP - 127.82
+- EULER_ANCESTRAL - 128.14
+
+All 3 models, were rated as "FAST" in theory. The slowest by far, were:
+- SEEDS_3 - 369.14 => rated MODERATE
+- HEUNPP2 - 356.50 => rated FAST
+
+Other than that, GRADIENT_ESTIMATION wich was rated as SLOW, got a 129.90 seconds average, making it be in top 10, from speed point of view. 
+
+Here is top 10:
+1.	EULER_ANCESTRAL_CFG_PP - FAST - 127.78
+2.	EULER_CFG_PP - FAST - 127.82
+3.	EULER_ANCESTRAL - FAST - 128.14
+4.	LMS - MODERATE - 128.45
+5.	DPM_FAST - VERY FAST - 128.61
+6.	IPNDM - MODERATE - 129.35
+7.	DPMPP_2M_SDE - MODERATE - 129.68
+8.	ER_SDE - FAST - 129.72
+9.	GRADIENT_ESTIMATION - SLOW - 129.90
+10.	DPMPP_3M_SDE_GPU - MODERATE - 130.21
+
+All of the images generated have been generated using the same setup. If speed is of concern, then pick one of the top 28 samplers (time wise), from 28 to 29 there is a huge gap of about 110 seconds per image generation. 
+
+Top 28 in order: EULER_ANCESTRAL_CFG_PP, EULER_CFG_PP, EULER_ANCESTRAL, LMS, DPM_FAST, IPNDM, DPMPP_2M_SDE, ER_SDE, GRADIENT_ESTIMATION, DPMPP_3M_SDE_GPU, RES_MULTISTEP_ANCESTRAL, UNI_PC_BH2, DPMPP_3M_SDE, LCM, DDPM, GRADIENT_ESTIMATION_CFG_PP, UNI_PC, DPMPP_2M, RES_MULTISTEP_ANCESTRAL_CFG_PP, DEIS, RES_MULTISTEP, RES_MULTISTEP_CFG_PP, EULER, DPMPP_2M_CFG_PP, DPMPP_2M_SDE_GPU, IPNDM_V, DDIM, SA_SOLVER
+
+Between the first and the 28th there is a difference of 10 seconds in average per image generation.
+
+My setup:
+- Graphic Card: NVIDIA GeForce RTX 4060 Ti with 8Gb VRAM 
+- CPU: AMD Ryzen 5 5500, 3.60 GHz
+- RAM: 32.0 GB, speed of 2400 MT/s 
 
 
 
